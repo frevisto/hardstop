@@ -1,0 +1,15 @@
+PRODUCT BACKLOG
+
+A principio, o produto final deve ser um Ambiente de Aprendizado que se refere à metodologia Scrum.
+Nele, o usuário deve se cadastrar com seu nome e e-mail para acessar uma página de perfil, onde terá
+acesso a três áreas: seu certificado (caso completo o curso), o curso em andamento (no qual é preciso
+que seu status de completude seja salvo e atualizado na base de dados) e a página da Avaliação, que
+consistirá em 20 questões aleatórias. Seu requisito mínimo é de 70% de acertos e será apresentado em
+um ambiente de correção, que será acionado através de um botão submit no ambiente da avaliação. Nele,
+também existirá a opção de retomar a prova com novas questões.
+
+Referente ao ambiente de curso em andamento, teremos um abiente organizado para o método de trabalho
+Scrum. Nele, teremos um calendário interativo para o prazo final da completude do curso, uma área de
+retrospectiva para cada módulo concluído e os módulos pendentes. Cada módulo terá seu teste, que serão
+como um review de cada módulo. E, por fim, sempre ao sair do sistema, uma caixa de diálogo que mostra
+a pergunta, "Estou em dia hoje?" e recupera a resposta do usuário.

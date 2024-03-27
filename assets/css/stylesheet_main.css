@@ -1,6 +1,18 @@
 body {
-    background-image: url(./assets/images/BGrugby.ball.gif);
+    background-image: url(../images/BGrugby.ball.gif);
     background-size: cover, 100vh,100vw;
     background-position: top;
     
+}
+div.maindiv{
+
+    width: 70vw;height: 100vh;
+    background-color: white;
+    border-radius: 10px;
+
+}
+div.logosyst{
+    max-width: fit-content;
+    max-height: fit-content;
+    position: top,left;
 }
