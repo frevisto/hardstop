@@ -1,0 +1,33 @@
+<html lang="pt-BR">
+<head>
+    <link href="layout.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <button id="openmenu">&#9776;</button>
+        <a href="#" id="logo">Logo</a>
+        <nav id="menu">
+            <button id="closemenu">X</button>
+            <a href="#">incio</a>
+            <a href="#">produto</a>
+            <a href="#">sobre</a>
+            <a href="#">contato</a>
+    
+        </nav>
+    </header>
+    <main>principal</main>
+    <aside>relacionado</aside>
+    <footer>rodapé</footer>
+    <script type="text/javascript">
+        openmenu.addEventListener('click',() =>{
+        menu.style.display="flex"
+        })
+        closemenu.addEventListener('click',() =>{
+            menu.removeAttribute('style')
+        })
+    </script>
+</body>
+</html>
