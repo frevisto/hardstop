@@ -1,0 +1,16 @@
+25/03 - dimensionamento da tela padrão 1440x1024; dimensionamento ante
+posição do div central x:400px, y:0, width:480, height:1024;
+observar com Sudo o problema de exibição em outras resoluções;
+
+26/03 - refarei BG para dimensionamento 16:9 (figma me deu dimensões antigas);
+problema de exibição em outras resoluções segue ativo;
+
+26/03 - refeito BG e inserido na página inicial.
+Arquivo "BGrugby.ball.PNG" depreciado em favor de "BGrugby.ball.gif".
+"Problema" da resolução relativamente solucionado: ChatGPT sugere usar
+posicionamentos relativos, não absolutos (como x=100px), onde x=90% de
+outro elemento, preservando a escala dos objetos.
+
+09/04 - "Merge successeful" - Necessário que se adicione no arquivo "~/propriedades/js" 
+os códigos em JS. Quanto às mudanças de hoje no arquivo, se trata de um merge que foi 
+feito anteriormente por mim e Nicolas Aquino porém upado no repositório "Nickaqui/hardstop".
