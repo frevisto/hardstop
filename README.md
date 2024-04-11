@@ -1,5 +1,5 @@
-<div>
-  <img src="https://github.com/claudsaints/hardstop/blob/main/assets/loho_hst.gif" align="middle">
+<div align="middle">
+  <img #logo src="https://github.com/claudsaints/hardstop/blob/main/assets/loho_hst.gif" align="middle">
 </div>
 <div>
  <h1>📍SOBRE</h1>
@@ -12,11 +12,11 @@
 </div>
 
 # 🗂️SPRINTS
-| Sprint  | Datas   | Relarotórios                                     |
-| ------- | --------------------- |---------------------------------------------- |
-| :one:   | :calendar: 17/04/2024 | :round_pushpin: [Ver](link) |
-| :two:   | :calendar: 15/05/2024 | :round_pushpin: [Ver](./link) |
-| :three: | :calendar: 12/06/2024 | :round_pushpin: [Ver](./link) |
+| Sprint  | Datas   | Relatórios                                     |
+|:-------:| --------------------- |---------------------------------------------- |
+| 1  | :calendar: 17/04/2024 |  ➡️ [Ver](https://github.com/frevisto/hardstop/blob/main/logs/sprint1.md) |
+| 2   | :calendar: 15/05/2024 | ➡️  [Ver](./link) |
+| 3 | :calendar: 12/06/2024 |  ➡️ [Ver](./link) |
 
 
 # 📑PRODUCT BACKLOG
@@ -41,18 +41,26 @@
 |Como usuario eu quero|  Ter a opção de realizar novamente o teste caso minha nota seja abaixo de 70%                    |     Ter uma outra oportunidade de estudar novamente e reavaliar meus conhecimentos já que não atingi a pontuação mínima.                         |
 |Como usuario eu quero|  Ter acesso ao meu certificado de forma permante ao meu certificado atindo a nota, igual, ou superior a 70%                    |         Uma prova da minha total compreenção da metodologia ágil SCRUM, e assim certificar que dominio o assunto para necessitades futuras.                     |
 
-# BURNDOWN
+# 🐦‍🔥 BURNDOWN
 
-# TRELO 
+# 🧮 TRELLO 
 
-# REQUESITOS DO CLIENTE
+# 📖 REQUESITOS DO CLIENTE
 
-# WIREFRAME
+# ✈️ WIREFRAME
 
-# TOOLS
+# ⚙️ TOOLS
 
-# :computer:EQUIPE
+# :computer: EQUIPE
 
-
-
-
+|CARGO | NOME| SOCIAL MEDIA |
+|------|-----|--------------|
+|      |     |              |
+|      |     |              |
+|      |     |              |
+|      |     |              |
+|      |     |              |
+|      |     |              |
+|      |     |              |
+|      |     |              |
+ 
