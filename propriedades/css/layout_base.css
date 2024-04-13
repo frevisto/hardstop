@@ -70,7 +70,10 @@ aside a{
  
     
 }
-
+.conteudo{
+   text-align: center;
+   font-size: large;
+}
 @media only screen and (max-width: 923px){
     main{
         height:calc(100vh- 330px);
