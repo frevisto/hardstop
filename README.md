@@ -5,11 +5,7 @@
  <h1>📍SOBRE</h1>
   <p>Um projeto da equipe <b>Hard Stop</b> dedicado à criação de um site de aprendizado sobre Scrum, impulsionado por um grupo incrivelmente comprometido e apaixonado por promover a metodologia ágil</p>
 </div>
-<div>
-<h1> 
-  <a href="PRODUCT-BACKLOG">Product Backlog</a> | <a href="SPRINTS">SPRINTS</a> | <a href="PRODUCT-BACKLOG">Product Backlog</a>
-</h1>
-</div>
+
 
 # 🗂️SPRINTS
 | Sprint  | Datas   | Relatórios                                     |
@@ -22,31 +18,31 @@
 # 📑PRODUCT BACKLOG
 |  Requisitos Funcionais              |
 |----------------|
-|   Os conteúdos devem ser distribuídos em páginas atendendo aos princípios de arquiteturade informação;      |
-|   As páginas devem possuir um mecanismo de navegação comum (menu de navegação) que, ao ser clicado, remete o usuário à seção correspondente;                                                                                                            |
-|   O usuário deve ser capaz de se auto cadastrar, informando seu nome completo e seu email;                                                                                                                                   |
-|   O usuário deve ser capaz de fazer o login usando apenas o e-mail;                                                                                                                                                          |
-|   O sistema deve ter um cadastro de questões, com alternativas verdadeira ou falsa,referentes aos temas apresentados nas páginas do portal;                                                                                  |
-|  A base de dados deverá ter pelo menos 50 questões sobre os temas abordados em cada página do portal;                                                                                                                        |
-|   As questões devem ser cadastradas pelo administrador diretamente no SGBD PostgreSQL;                                                                                                                                       |
-|    O sistema deve gerar uma página com 20 questões aleatórias obtidas no BD. Essa página deve estar disponível somente após o usuário efetuar o login;                                                                       |
-| Ao responder as questões o usuário recebe o seu score (0 a 100%);                                                                                                                             |
-|   Caso o usuário obtenha um score inferior a 70%, terá a opção de reiniciar a avaliação, sendo que nesse caso o sistema deverá sortear outro grupo de questões;                                                              |
+|   Os conteúdos devem ser distribuídos em páginas atendendo aos princípios de arquiteturade informação.      |
+|   As páginas devem possuir um mecanismo de navegação comum (menu de navegação) que, ao ser clicado, remete o usuário à seção correspondente.                                                                                                            |
+|   O usuário deve ser capaz de se auto cadastrar, informando seu nome completo e seu email.                                                                                                                                   |
+|   O usuário deve ser capaz de fazer o login usando apenas o e-mail.                                                                                                                                                          |
+|   O sistema deve ter um cadastro de questões, com alternativas verdadeira ou falsa,referentes aos temas apresentados nas páginas do portal.                                                                                  |
+|  A base de dados deverá ter pelo menos 50 questões sobre os temas abordados em cada página do portal.                                                                                                                        |
+|   As questões devem ser cadastradas pelo administrador diretamente no SGBD PostgreSQL.                                                                                                                                       |
+|    O sistema deve gerar uma página com 20 questões aleatórias obtidas no BD. Essa página deve estar disponível somente após o usuário efetuar o login.                                                                       |
+| Ao responder as questões o usuário recebe o seu score (0 a 100%).
+|   Caso o usuário obtenha um score inferior a 70%, terá a opção de reiniciar a avaliação, sendo que nesse caso o sistema deverá sortear outro grupo de questões.                                                              |
 |   Ao obter o score igual ou superior a 70%, o certificado deve ficar disponível para o aluno no sistema de modo permanente e as questões do teste devem aparecer de modo permanente e com o valor da correção (não deve haver mais sorteio). |
                                                                                                                           
 |   Requisitos Não Funcionais                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------|
-|  Documentação no GitHub: repositório do código fonte de cada sprint, descrição do projeto, link para cada entrega de sprint, backlog do produto, backlog de cada sprint, requisitos do cliente (user stories), prints das telas ou link para o portal, burndown de cada sprint mostrando funcionalidades (quantidade de requisitos) implementadas versus tempo,tecnologias utilizadas e membros da equipe (link para o GitHub de cada membro)|
-|Utilizar o Trello para gerenciar o backlog do produto. Preferencialmente fazer a integração entre o Trello e GitHub|
-|No Trello, cada cartão representa uma tarefa ou uma história de usuário|
-|Os membros da equipe podem adicionar links para problemas do GitHub relevantes acada cartão no Trello|
-|Quando um membro da equipe começa a trabalhar em uma tarefa, ele pode mover o cartão correspondente para a coluna "Em progresso"     |
-|Quando o trabalho em uma tarefa estiver concluído e um pull request for aberto no GitHub, o membro da equipe pode adicionar o link do pull request ao cartão no Trello|
+|  Documentação no GitHub: repositório do código fonte de cada sprint, descrição do projeto, link para cada entrega de sprint, backlog do produto, backlog de cada sprint, requisitos do cliente (user stories), prints das telas ou link para o portal, burndown de cada sprint mostrando funcionalidades (quantidade de requisitos) implementadas versus tempo,tecnologias utilizadas e membros da equipe (link para o GitHub de cada membro).|
+|Utilizar o Trello para gerenciar o backlog do produto. Preferencialmente fazer a integração entre o Trello e GitHub.|
+|No Trello, cada cartão representa uma tarefa ou uma história de usuário.|
+|Os membros da equipe podem adicionar links para problemas do GitHub relevantes acada cartão no Trello.|
+|Quando um membro da equipe começa a trabalhar em uma tarefa, ele pode mover o cartão correspondente para a coluna "Em progresso".     |
+|Quando o trabalho em uma tarefa estiver concluído e um pull request for aberto no GitHub, o membro da equipe pode adicionar o link do pull request ao cartão no Trello.|
 |Os membros da equipe podem monitorar o progresso das tarefas no Trello e visualizar os links para os problemas e pull requests correspondentes no GitHub.|
-| Utilizar a linguagem de programação JavaScript no front end e back end |
-|Linguagem de marcação HTML e estilos CSS |
-|Visual responsivo utilizando CSS média queries – não poderá ser usado o Bootstrap ou qualquer outro framework de estilização |
-| Prototipação de telas no Figma |
+| Utilizar a linguagem de programação JavaScript no front end e back end. |
+|Linguagem de marcação HTML e estilos CSS. |
+|Visual responsivo utilizando CSS média queries – não poderá ser usado o Bootstrap ou qualquer outro framework de estilização. |
+| Prototipação de telas no Figma. |
 | Os dados devem ser persistidos no SGBD PostgreSQL.|
 
 # :busts_in_silhouette: USER STORIES
@@ -78,17 +74,21 @@
 
 # ⚙️ TOOLS
 
+<div align="middle">
+  <img  src="https://skillicons.dev/icons?i=github,vscode,figma,javascript,html,css,nodejs,postgresql,git,linux">
+</div>
+
 # :computer: EQUIPE
 
 |CARGO | NOME| SOCIAL MEDIA |
 |------|-----|:--------------:|
-| Scrum Master     | Georgia Mantchev   | <a target="blank" href="https://github.com/Mantchev13"><img  src="https://skillicons.dev/icons?i=github"></a>   |
-| Product Owner     | Vitor  Azevedo  |     <a target="blank" href="https://github.com/frevisto"><img  src="https://skillicons.dev/icons?i=github"></a>          |
-| Dev     |   Andre De Carvalho      |     <a target="blank" href="https://github.com/andremc331"><img  src="https://skillicons.dev/icons?i=github"></a>         |
-| Dev     |   Breno De Luca    |     <a target="blank" href="https://github.com/brn-lc"><img  src="https://skillicons.dev/icons?i=github"></a>        |
-| Dev     |   Claudio Dos Santos   |    <a target="blank" href="https://github.com/claudsaints"><img  src="https://skillicons.dev/icons?i=github"></a>           |
-| Dev     |   Claudio Perretti    |     <a target="blank" href="https://github.com/ClauPerretti"><img  src="https://skillicons.dev/icons?i=github"></a>      |
-| Dev     |   Eduardo  Brito|            <a target="blank" href="https://github.com/EduardoBrito2"><img  src="https://skillicons.dev/icons?i=github"></a>   |
-| Dev     |   Nicolas Aquino  |           <a target="blank" href="https://github.com/Nickaqui"><img  src="https://skillicons.dev/icons?i=github"></a>    |
-| Dev     |   Nicolas  Henrique|        <a target="blank" href="https://github.com/NICOLAShsdo"><img  src="https://skillicons.dev/icons?i=github"></a>       |
+| Scrum Master     | Georgia Mantchev   | <a target="_blank" href="https://github.com/Mantchev13"><img  src="https://skillicons.dev/icons?i=github"></a>   |
+| Product Owner     | Vitor  Azevedo  |     <a target="_blank" href="https://github.com/frevisto"><img  src="https://skillicons.dev/icons?i=github"></a>          |
+| Dev     |   Andre De Carvalho      |     <a target="_blank" href="https://github.com/andremc331"><img  src="https://skillicons.dev/icons?i=github"></a>         |
+| Dev     |   Breno De Luca    |     <a target="_blank" href="https://github.com/brn-lc"><img  src="https://skillicons.dev/icons?i=github"></a>        |
+| Dev     |   Claudio Dos Santos   |    <a target="_blank" href="https://github.com/claudsaints"><img  src="https://skillicons.dev/icons?i=github"></a>           |
+| Dev     |   Claudio Perretti    |     <a target="_blank" href="https://github.com/ClauPerretti"><img  src="https://skillicons.dev/icons?i=github"></a>      |
+| Dev     |   Eduardo  Brito|            <a target="_blank" href="https://github.com/EduardoBrito2"><img  src="https://skillicons.dev/icons?i=github"></a>   |
+| Dev     |   Nicolas Aquino  |           <a target="_blank" href="https://github.com/Nickaqui"><img  src="https://skillicons.dev/icons?i=github"></a>    |
+| Dev     |   Nicolas  Henrique|        <a target="_blank" href="https://github.com/NICOLAShsdo"><img  src="https://skillicons.dev/icons?i=github"></a>       |
  
