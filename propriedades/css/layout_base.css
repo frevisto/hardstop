@@ -72,8 +72,17 @@ aside a{
  
     
 }
+.titulo{
+    text-align: center;
+    padding: 35px;
+    padding-bottom: 20px;
+}
 .conteudo{
-   text-align: center;
+    padding-top: 20px;
+    padding-left: 40px;  
+    padding-right: 40px;
+    text-justify: distribute;
+    text-align: justify,left;
    font-size: large;
 }
 @media only screen and (max-width: 923px){
