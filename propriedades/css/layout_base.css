@@ -1,4 +1,5 @@
 *{
+    font-family: calibri;
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -25,6 +26,7 @@ header #logo{
     flex: 0 1 200px;
 }
 #openmenu,#closemenu{
+    float:inline-start;
     border: none;
     background-color: none;
     font-size: 30px;
@@ -70,8 +72,17 @@ aside a{
  
     
 }
+.titulo{
+    text-align: center;
+    padding: 35px;
+    padding-bottom: 20px;
+}
 .conteudo{
-   text-align: center;
+    padding-top: 20px;
+    padding-left: 40px;  
+    padding-right: 40px;
+    text-justify: distribute;
+    text-align: justify,left;
    font-size: large;
    font-size: larger;
    word-break: keep-all;
@@ -86,12 +97,12 @@ aside a{
 }
 @media only screen and (max-width: 923px){
     main{
-        height:calc(100vh- 330px);
+        height:fit-content;
         
     }
     aside{
         flex:1 1 10vw;
-        height:100px;
+        height:fit-content;
     }
     aside a{
         display: flex;
@@ -109,9 +120,10 @@ aside a{
 @media only screen and (max-width: 717px){
     #openmenu, #closemenu{
         display: block;
+        
     }
     #openmenu{
-        margin-left: auto;
+        margin-left: none;
     }
     #closemenu{
         position: fixed;
@@ -142,3 +154,21 @@ aside a{
         width:30%; 
     }
 }
+#login_field {
+    /* display: flex; */
+    position: right;
+    float: right;
+    padding: 10%;
+  }
+  #login_fieldset {
+    padding: 15px;
+    border-radius: 3px;
+    border-bottom-right-radius: 20px;
+  }
+  div.cadin > input{
+    width: 175px;
+    padding: 4px;
+  }
+  #okcad {
+    padding-top: 3px;margin-left: 150px;
+  }
