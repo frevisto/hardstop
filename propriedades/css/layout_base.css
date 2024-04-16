@@ -73,6 +73,16 @@ aside a{
 .conteudo{
    text-align: center;
    font-size: large;
+   font-size: larger;
+   word-break: keep-all;
+}
+#avancar_pagina{
+    position: absolute;
+    bottom: 200;
+    right: 700;
+    width: 170;
+    height: 70;
+    font-size: large;
 }
 @media only screen and (max-width: 923px){
     main{
