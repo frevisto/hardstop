@@ -1,60 +1,100 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="Página Inicial" content="width=device-width, initial-scale=1.0">
-    <title>AVA Scrum</title>
-    <link rel='stylesheet' href='./propriedades/css/stylesheet_main.css'>
-</head>
+<html lang="pt-BR">
+  <head>
+    <link
+      href="./propriedades/css/layout_base.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <button id="openmenu">&#9776;</button>
+      <a href="https://github.com/frevisto/hardstop" id="logo"
+        ><img
+          width="169px"
+          height="100px"
+          src="./propriedades/images/logo_syst.png"
+      /></a>
+      <nav id="menu">
+        <button id="closemenu">X</button>
+        <a href="#">incio</a>
+        <a href="#">produto</a>
+        <a href="#">sobre</a>
+        <a href="#">contato</a>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titulo">Apresentação</h1>
+      <div class="conteudo">
+        <p>
+          Neste curso, embarcaremos juntos em uma jornada de descoberta,
+          explorando os princípios, práticas e aplicações do Scrum no
+          desenvolvimento de produtos e projetos. Seja você um novato curioso ou
+          um profissional experiente em busca de aprimoramento, este curso foi
+          cuidadosamente projetado para atender as necessidades de todos os
+          participantes.
+        </p>
+        <p>
+          Ao longo das próximas semanas, mergulharemos a fundo nos fundamentos
+          do Scrum, desde sua origem e valores até sua implementação prática em
+          ambientes de negócios reais e com a oportunidade de aprender com
+          especialistas da área.
+        </p>
+        <p>
+          Este curso não se trata apenas de adquirir conhecimento teórico, mas
+          também de desenvolver habilidades práticas que serão valiosas em sua
+          carreira profissional.<br>
+          Queremos capacitá-lo para se tornar um líder eficaz, capaz de
+          impulsionar a inovação, promover a colaboração e entregar valor ao
+          cliente de forma consistente.<br>
+          Então, prepare-se para uma jornada emocionante e desafiadora. Estamos
+          aqui para apoiá-lo em cada etapa do caminho e estamos animados para
+          ver o quanto você crescerá ao longo deste curso. Sem mais delongas,
+          vamos começar esta jornada rumo ao domínio do Scrum!<br>
+        </p>
+      </div>
 
-
-
-<body>
-    <div class="logo_syst">
-        <a href="./index.html" title="Home">
-            <img src=./propriedades/images/logo_syst.png></img>      
-        </a> 
-    </div>
-           
-    <div class="maindiv">
-        <div class="title">
-            <h1>Bem-vindos,</h1>
+      <div id="login_field">
+        <fieldset id="login_fieldset">
+          <legend style="text-align: right">LOGIN</legend>
+          <div>
+            <input
+              id="user_address"
+              type="email"
+              placeholder="Informe seu e-mail"
+            />
+          </div>
+          <div style="padding-top: 3px">
+            <button type="submit" style="width: 50px;height: 20px;">OK</button>
+          </div>
+        </fieldset>
+        <div style="text-align: center">
+          ou <a href="./pages/cadastro.html">cadastre-se</a>
         </div>
-        <div class="content">
-            <p>Neste curso, teremos como objeitvo o ensino e a prática 
-            do método de trabalho Scrum!<br>
-            Serão abordados temas como os primórdios do desenvolvimento
-            de programas para computação e a chamada "Crise do Software" (+).
-            Assim, entenderemos a necessidade da criação de novas metodologias de desenvolvimento, chamadas ágeis,
-            nas quais o desenvolvimento iterativo é estrategicamente adotado.</p>
-        </div>
-
-        <div id="login_field">
-            <fieldset id="login_fieldset" >
-                
-                <legend style="text-align: right;">
-                        LOGIN
-                </legend>
-                    <div>
-                        <input id="user_address" type="email"
-                         placeholder="Informe seu e-mail">
-                    </div>
-                    <div style="padding-top: 3px;">
-                        <button type="submit"
-                       
-                            
-                            
-                        >OK</button>
-                    </div>    
-                </fieldset>
-                <div style="text-align: center;"
-                    >ou <a href="./pages/cadastro.html">cadastre-se</a>
-                </div>
-        </div>
-    </div>
-
-
+      </div>
 
   
-</body>
+    </main>
+    <aside>
+      relacionado
+      <a href="https://github.com/frevisto/hardstop" target="_blank" id="hslogo"
+        ><img
+          id="logohardstop"
+          width="250px"
+          height="250px"
+          src="./propriedades/images/LOGO-HS-GROUP.png"
+      /></a>
+    </aside>
+    <script type="text/javascript">
+      openmenu.addEventListener("click", () => {
+        menu.style.display = "flex";
+      });
+      closemenu.addEventListener("click", () => {
+        menu.removeAttribute("style");
+      });
+    </script>
+  </body>
 </html>

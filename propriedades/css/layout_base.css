@@ -97,7 +97,7 @@ aside a{
 }
 @media only screen and (max-width: 923px){
     main{
-        height:fit-content;
+        height:calc(100vh- 330px);
         
     }
     aside{
@@ -141,6 +141,9 @@ aside a{
         display:none;
         margin: 0;
     }
+nav>a{
+    background-color:rgba(255,255,255,0) ;
+}
     main{
         border-radius: 20px;
     }
