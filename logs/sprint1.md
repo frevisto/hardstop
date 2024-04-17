@@ -10,5 +10,4 @@
 |      🟢 outras                      |    GitHub: descrição do projeto, link para cada entrega de sprint, prints das tela ou link para o portal, tecnologias utilizadas e membros da equipe (com link para o GitHub de cada membro)  |   💚 Concluido  | 3️⃣|
 |      🟢 outras                     |   GitHub: User stories com Ator, ação e motivo                 |       💚 Concluido            |  3️⃣ | 
 |      🟢 outras                      |   GitHub: backlog do produto e sprint priorizado (baixa, média e alta prioridade)                 |   💚 Concluido                | 3️⃣ |
-|      🟢 outras                      |   GitHub: Burndown                 |      🟨 Em Andamento                | 3️⃣ |
 |      🟢 outras                      |   Trello: cronograma de tarefas com link para o GitHub                 |    💚 Concluido               | 3️⃣ |
