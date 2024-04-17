@@ -164,7 +164,7 @@ nav>a{
     padding: 10%;
   }
   #login_fieldset {
-    padding: 15px;
+    padding: 50px;
     border-radius: 3px;
     border-bottom-right-radius: 20px;
   }
@@ -175,3 +175,11 @@ nav>a{
   #okcad {
     padding-top: 3px;margin-left: 150px;
   }
+#texto_login{
+    padding-top: 20px;
+    padding-left: 40px;  
+    padding-right: 40px;
+    text-justify:auto ;
+    text-align: center;
+   font-size:x-large;
+}

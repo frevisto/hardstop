@@ -15,4 +15,7 @@ outro elemento, preservando a escala dos objetos.
 os códigos em JS. Quanto às mudanças de hoje no arquivo, se trata de um merge que foi 
 feito anteriormente por mim e Nicolas Aquino porém upado no repositório "Nickaqui/hardstop".
 
-16/04 - Claudio P. - adicionado o funcionamento do botão de avanço de página e criado o arquivo base.html para ser usado como modelo para criação das páginas
+16/04 - Claudio P. - adicionado o funcionamento do botão de avanço de página e criado o arquivo base.html 
+para ser usado como modelo para criação das páginas.
+
+17/04 - Claudio P. - alterado o texto e alterações do layout da página de login
