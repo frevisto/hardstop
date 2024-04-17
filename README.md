@@ -3,7 +3,7 @@
 </div>
 <div>
  <h1>📍SOBRE</h1>
-  <p>Um projeto da equipe <b>Hard Stop</b> dedicado à criação de um site de aprendizado sobre Scrum, impulsionado por um grupo incrivelmente comprometido e apaixonado por promover a metodologia ágil</p>
+  <p>Um projeto da equipe <b>Hard Stop</b> dedicado à criação de um site de aprendizado sobre Scrum, impulsionado por um grupo incrivelmente comprometido e apaixonado por promover a metodologia ágil.</p>
 </div>
 
 
@@ -62,15 +62,22 @@
 # ✈️ WIREFRAME
 
 <div align="middle">
-  <img src="https://github.com/frevisto/hardstop/blob/main/miscelaneo/FIGMA/FIGMA%20PROTOTIPO.png">
+  <img src="https://github.com/frevisto/hardstop/blob/main/miscelaneo/FIGMA/prot%C3%B3tipo%20figma.png">
 </div>
 
 # 🔗 LINKS
 
-## 🧮 TRELLO 
+### 🧮 TRELLO 
 [Clique Aqui](https://trello.com/b/0PaoBh4g/ambiente-de-ensino-digital-de-scrum)
 
-## 📖 REQUESITOS DO CLIENTE
+### 📖 REQUESITOS DO CLIENTE
+[Clique Aqui](https://github.com/frevisto/hardstop/blob/main/miscelaneo/Requisitos%20de%20Cliente%201DSM%20-%202024-1.pdf)
+
+### 🖌️ Cores
+[Clique Aqui](https://github.com/frevisto/hardstop/blob/main/miscelaneo/Cores%20e%20Contrastes.pdf)
+
+### ⚾ BD
+[Clique Aqui](https://github.com/frevisto/hardstop/blob/main/miscelaneo/bd_conceitual.jpg)
 
 # ⚙️ TOOLS
 
