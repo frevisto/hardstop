@@ -73,11 +73,14 @@
 ### 📖 REQUESITOS DO CLIENTE
 [Clique Aqui](https://github.com/frevisto/hardstop/blob/main/miscelaneo/Requisitos%20de%20Cliente%201DSM%20-%202024-1.pdf)
 
-### 🖌️ Cores
+### 🖌️ CORES
 [Clique Aqui](https://github.com/frevisto/hardstop/blob/main/miscelaneo/Cores%20e%20Contrastes.pdf)
 
-### ⚾ BD
+### ⚾ BD 
 [Clique Aqui](https://github.com/frevisto/hardstop/blob/main/miscelaneo/bd_conceitual.jpg)
+
+### 🎨 FIGMA
+[Clique Aqui](https://www.figma.com/file/05ojYc0TRL8PFXyYzmALwF/SIST-CERT?type=design&node-id=0%3A1&mode=design&t=znpc1XpZpwFwm7Yc-1)
 
 # ⚙️ TOOLS
 
