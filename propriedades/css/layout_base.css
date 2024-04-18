@@ -56,9 +56,49 @@ main{
     background: white;
     border-radius: 0 20px 0 0;
 }
+
+.cdst_inputs{
+  flex: 1 1 300;  
+  width: 23%;
+  background-color: #5D84A1;
+  margin-left: auto;
+  margin-right: auto;
+}
+.laabel{
+    flex: 1 1 300; 
+    margin-top: 50px;
+}
+.laabel>input{
+    text-align: left;
+}
+.buttonal{
+    margin: auto;
+    width: 100%;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+#cdst_bot{
+    background-color: rgb(190, 182, 182);
+    height: 30px;
+    border: none;
+    width: 100px;
+}
+#user_name{
+    padding: 20px;
+    border: none;
+    background-color: rgb(190, 182, 182);
+}
+#user_address{
+    padding: 20px;
+    border: none;
+    background-color: rgb(190, 182, 182);
+}
+
 aside{
     flex: 1 1 100px;
-    background: linear-gradient(#B4DFFF,#5D84A1);
+    background: transparent;
 
 }
 aside a{
@@ -116,6 +156,12 @@ aside a{
         height: 100%;
         width:10%;
     }
+    .cdst_inputs{
+        flex: auto;
+    }
+    .buttonal{
+        flex: auto;
+    }
 }
 @media only screen and (max-width: 717px){
     #openmenu, #closemenu{
@@ -141,9 +187,9 @@ aside a{
         display:none;
         margin: 0;
     }
-nav>a{
-    background-color:rgba(255,255,255,0) ;
-}
+    nav>a{
+        background-color:rgba(255,255,255,0) ;
+    }
     main{
         border-radius: 20px;
     }
@@ -155,6 +201,19 @@ nav>a{
         object-fit: cover;
         height: 55%;
         width:30%; 
+    }
+    .laabel{
+        text-align: center;
+    }
+    #user_name{
+        flex: auto;
+        width: 100%;
+    }
+    #user_address{
+        width: 100%;
+    }
+    #cdst_bot{
+        width: 55%;
     }
 }
 #login_field {

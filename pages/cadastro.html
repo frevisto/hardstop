@@ -1,34 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="Página Inicial" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre-se</title>
-    <link rel='stylesheet' href='../propriedades/css/stylesheet_main.css'>
-</head>
-
-<body>
-    <div class="logo_syst">
-        <a href="../index.html" title="Home">
-            <img src=../propriedades/images/logo_syst.png></img>
-        </a>
-    </div>
-
-    <div class="maindiv2">
-        <div class="title">
-            <h1 >Cadastro de Novo Usuário</h1>
-            <div class="cadin">
+<html lang="pt-BR">
+  <head>
+    <link
+      href="../propriedades/css/layout_base.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <button id="openmenu">&#9776;</button>
+      <a href="https://github.com/frevisto/hardstop" id="logo"
+        ><img
+          width="169px"
+          height="100px"
+          src="../propriedades/images/logo_syst.png"
+      /></a>
+      <nav id="menu">
+        <button id="closemenu">X</button>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="https://github.com/frevisto/hardstop" target="_blank">sobre nós</a>
+        <a href="#"></a>
+      </nav>
+    </header>
+    <main>
+        <div class="maindiv2">
+            <div class="titulo">
+                <h1 >Cadastro de Novo Usuário</h1>
+            </div>
+            <div class="cdst_inputs">
+                    <div class="laabel">
+                        <label for="user_name" >NOME: </label><br>
                         <input id="user_name" type="text" 
                         placeholder="Informe seu nome completo"
-                        ><br>
+                        >
+                    </div>    
+                    <div class="laabel">
+                        <label for="user_address">E-MAIL:</label><br>
                         <input id="user_address" type="email" 
                             placeholder="Informe seu e-mail">
-                    <br>
-                    <div id="okcad">
-                        <button type="submit">OK</button>
+                    </div>
+                    <div class="buttonal">
+                        <button id="cdst_bot"><a href="../index.html">Enviar</a></button>
                     </div>
             </div>
+        
         </div>
-    </div>
-</body>
+    </main>
+    <aside>
+      relacionado
+      <a href="https://github.com/frevisto/hardstop" target="_blank" id="hslogo"
+        ><img
+          id="logohardstop"
+          width="250px"
+          height="250px"
+          src="../propriedades/images/LOGO-HS-GROUP.png"
+      /></a>
+    </aside>
+    <script type="text/javascript">
+      openmenu.addEventListener("click", () => {
+        menu.style.display = "flex";
+      });
+      closemenu.addEventListener("click", () => {
+        menu.removeAttribute("style");
+      });
+    </script>
+  </body>
+</html>
