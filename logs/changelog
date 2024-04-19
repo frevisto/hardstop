@@ -11,9 +11,15 @@ Arquivo "BGrugby.ball.PNG" depreciado em favor de "BGrugby.ball.gif".
 posicionamentos relativos, não absolutos (como x=100px), onde x=90% de
 outro elemento, preservando a escala dos objetos.
 
-09/04 - Vitor F. - "Merge successeful" - Necessário que se adicione no arquivo "~/propriedades/js" 
+28/03 - Claudio S. - criação da estrutura flex; com tags de página padrão;
+
+09/04 
+- Vitor F. - "Merge successeful" - Necessário que se adicione no arquivo "~/propriedades/js" 
 os códigos em JS. Quanto às mudanças de hoje no arquivo, se trata de um merge que foi 
 feito anteriormente por mim e Nicolas Aquino porém upado no repositório "Nickaqui/hardstop".
+- Claudio S. Update README.md conceituando o readme com os elementos precisos do projeto.
+
+11/04 - Claudio S. - Layout base html e css.
 
 16/04 - Claudio P. - adicionado o funcionamento do botão de avanço de página e criado o arquivo base.html 
 para ser usado como modelo para criação das páginas.
