@@ -1,6 +1,6 @@
 function salvarUsuario() {
-  const mail = document.getElementById("mail").value.trim();
-  const nome = document.getElementById("nome").value.trim();
+  const mail = document.getElementById("user_address").value.trim();
+  const nome = document.getElementById("user_name").value.trim();
 
   if (!mail || mail.length == 0) {
     alert("Forneça o e-mail");

@@ -1,5 +1,5 @@
 function logar() {
-  const mail = document.getElementById("login-mail").value.trim();
+  const mail = document.getElementById("user_address").value.trim();
 
   if (!mail || mail.length == 0) {
     alert("Forneça o e-mail");
@@ -28,7 +28,7 @@ function logar() {
       .then((data) => {
         if (data.idusuario) {
           salvarLogin(data);
-          window.location.href = "./questionario.html";
+          window.location.href = "./pages/profile.html";
         }
         else{
           alert(data.erro);
