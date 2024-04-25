@@ -1,8 +1,9 @@
 *{
-    font-family: calibri;
+    font-family: sans-serif;
     margin:0;
     padding:0;
     box-sizing: border-box;
+    text-align: center;
 }
 body{
     display:flex;
@@ -55,6 +56,8 @@ main{
     height: calc(130vh - 224px);
     background: white;
     border-radius: 0 20px 0 0;
+    overflow: scroll;
+    font-size: 20;
 }
 .cdst_inputs{
   flex: 1 1 300;  
@@ -266,4 +269,8 @@ padding-top: 3px;margin-left: 150px;
     text-justify:auto ;
     text-align: center;
    font-size:x-large;
+}
+#destaque {
+    font-weight: bold;
+      
 }
