@@ -1,0 +1,51 @@
+<html lang="pt-BR">
+  <head>
+    <link href="../../propriedades/css/layout_base.css" rel="stylesheet" type="text/css"/>
+    <script src="../../js/geral.js"></script>
+    <script src="../../js/questionario.js"></script>
+    <script src="../../js/questao.js"></script>
+    <link rel="shortcut icon" href="../propriedades/images/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body onload="carregarLogin();listarQuestao();">
+    <header>
+      <button id="openmenu">&#9776;</button>
+      <a href="https://github.com/frevisto/hardstop" id="logo"
+        ><img
+          width="169px"
+          height="100px"
+          src="../../propriedades/images/logo_syst.png"
+      /></a>
+      <nav id="menu">
+        <button id="closemenu">X</button>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="https://github.com/frevisto/hardstop" target="_blank">sobre nós</a>
+        <a href="#"></a>
+      </nav>
+    </header>
+    <main>
+      <div id="botao-logout" class="botao" onclick="logout()">Logout</div>
+      <div class="box">
+      </div>
+        <h3>Questões</h3>
+        <div id="saida"></div>
+      </div>
+    </main>
+    <aside>
+      <a href="https://github.com/frevisto/hardstop" target="_blank" id="hslogo">
+        <img id="logohardstop" src="../../propriedades/images/LOGO-HS-GROUP.png"/>
+      </a>
+    </aside>
+    <script type="text/javascript">
+      openmenu.addEventListener("click", () => {
+        menu.style.display = "flex";
+      });
+      closemenu.addEventListener("click", () => {
+        menu.removeAttribute("style");
+      });
+    </script>
+  </body>
+</html>
