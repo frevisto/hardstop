@@ -11,8 +11,8 @@
 | Sprint  | Datas   | Relatórios                                     |
 |:-------:| --------------------- |---------------------------------------------- |
 | 1  | :calendar: 17/04/2024 |  ➡️ [Ver](https://github.com/frevisto/hardstop/blob/main/logs/sprint1.md) |
-| 2   | :calendar: 15/05/2024 | ➡️  [Ver](./link) |
-| 3 | :calendar: 12/06/2024 |  ➡️ [Ver](./link) |
+| 2   | :calendar: 15/05/2024 | ➡️  [Ver](https://github.com/frevisto/hardstop/blob/main/logs/sprint2.md) |
+| 3 | :calendar: 12/06/2024 |  ➡️ [Ver](https://github.com/frevisto/hardstop/blob/main/logs/sprint3.md) |
 
 
 # 📑PRODUCT BACKLOG
