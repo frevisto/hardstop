@@ -1,0 +1,40 @@
+ 1- O Scrum foi desenvolvido a partir do Waterfall? FALSO
+ 2- O Scrum utiliza de etapas iterativas no desenvolvimento de um produto. O controle de tarefas que serão desenvolvidas em uma etapa é chamado de Product Backlog? FALSO
+ 3- O Scrum utiliza de etapas iterativas no desenvolvimento de um produto. Isso significa que a cada etapa parte do produto será entregue? VERDADEIRO
+ 4- A metodologia Scrum é estritamente usada no desenvolvimento de software. FALSO
+ 5- Quando há mudanças no escopo do projeto, conforme o Manifesto Ágil, estas mudanças são aplicadas de imediato e efetivo. FALSO
+ 6- A base do metodo Scrum é uma equipe auto-organizada? VERDADEIRO
+ 7- Dentre os artefatos do Scrum o Sprint Backlog sofre mudanças durante toda a extensão da etapa? FALSO
+ 8- No fim de cada etapa de desenvolvimento ocorrem algumas cerimônias. O Daily Meeting é uma delas? FALSO
+ 9- No fim de cada etapa de desenvolvimento ocorrem algumas cerimônias. A Sprint Retrospective é uma dessas cerimônias? VERDADEIRO
+ 10- A metodologia Scrum pode ser aplicada por uma única pessoa? FALSO
+ 11- A Sprint Review tem como único objetivo o reconhecimento de problemas encontrados pela equipe durante a Sprint? FALSO
+ 12- A Sprint Retrospective tem como objetivo o reconhecimento de problemas encontrados pela equipe durante a Sprint? VERDADEIRO
+ 13- o Manifesto Ágil foi desenvolvido sem base em artigos e livros científicos? FALSO
+ 14- Scrum é considerado uma metodologia ágil? VERDADEIRO
+ 15- O Scrum Master é responsável por garantir que a equipe siga as práticas do Scrum. VERDADEIRO
+ 16- As cerimônias do Scrum incluem Sprint Planning, Daily Scrum, Sprint Review e Sprint Retrospective. VERDADEIRO
+ 17- Scrum não possui papéis definidos, como desenvolvedores, analistas de negócios e testadores. FALSO
+ 18- O Product Owner é responsável por priorizar e gerenciar o backlog do produto. VERDADEIRO
+ 19- A duração de um sprint no Scrum é geralmente fixa e varia de equipe para equipe. VERDADEIRO
+ 20- O objetivo do Daily Scrum é atualizar o Product Owner sobre o progresso do sprint. FALSO
+ 21- Scrum não recomenda o uso de ferramentas para gerenciar o trabalho da equipe. FALSO
+ 22- O Scrum enfatiza a transparência, inspeção e adaptação como princípios fundamentais. VERDADEIRO
+ 23- A influência da ideia de promover eliminação de deperdícios veio dos conceitos do sistema de produção da Toyota. VERDADEIRO
+ 24- Um dos valores usados pelo Scrum é a dedicação? FALSO
+ 25- A falha ou falta de uma parte do projeto na entrega não prejudica os desenvolvedores no Scrum? FALSO
+ 26- A tomada de decisões fica à poder do Dev Team? FALSO
+ 27- Product Owner (P.O.) não tem poder nenhum sobre o produto e não auxilia em seu desenvolvimento? FALSO
+ 28- O papel do Scrum Master é auxiliar o funcionamento e operação da equipe? VERDADEIRO
+ 29- Os desenvolvedores não tem como função saber o funcionamento da metodologia Scrum? FALSO
+ 30- Scrum recomenda o uso de ferramentas para gerenciar o trabalho da equipe. VERDADEIRO
+ 31- Os pilares do Scrum são adaptação, inspeção e transparencia? VERDADEIRO
+ 32- Os pilares do Scrum são adaptação, praticidade e transparencia? FALSO
+ 33- O Scrum foi criado pelo Ken Schwaber e Jeff Sutheland? VERDADEIRO
+ 34- O Scrum foi criado pelo Ken Schwaber e Jeff Switzerland? FALSO
+ 35- O Scrum foi formalmente introduzido na literatura técnica na década de 1980? VERDADEIRO
+ 36- O Scrum foi formalmente introduzido na literatura técnica na década de 1970? FALSO
+ 37- As raízes e a origem do Scrum estão ligadas exclusivamente a área da engenharia de software? FALSO
+ 38- Assim que firmado um objetivo ele ainda pode sofrer alterações durante a extensão do projeto? VERDADEIRO
+ 39- O Scrum pode ajudar as pessoas a desenvoverem uma melhor organização pessoal? VERDADEIRO
+ 40- O Scrum ao final de cada sprint prioriza a entrega da versão mais recente do projeto ao cliente? VERDADEIRO 

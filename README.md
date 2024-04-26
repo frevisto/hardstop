@@ -11,8 +11,8 @@
 | Sprint  | Datas   | Relatórios                                     |
 |:-------:| --------------------- |---------------------------------------------- |
 | 1  | :calendar: 17/04/2024 |  ➡️ [Ver](https://github.com/frevisto/hardstop/blob/main/logs/sprint1.md) |
-| 2   | :calendar: 15/05/2024 | ➡️  [Ver](./link) |
-| 3 | :calendar: 12/06/2024 |  ➡️ [Ver](./link) |
+| 2   | :calendar: 15/05/2024 | ➡️  [Ver](https://github.com/frevisto/hardstop/blob/main/logs/sprint2.md) |
+| 3 | :calendar: 12/06/2024 |  ➡️ [Ver](https://github.com/frevisto/hardstop/blob/main/logs/sprint3.md) |
 
 
 # 📑PRODUCT BACKLOG
@@ -73,11 +73,14 @@
 ### 📖 REQUESITOS DO CLIENTE
 [Clique Aqui](https://github.com/frevisto/hardstop/blob/main/miscelaneo/Requisitos%20de%20Cliente%201DSM%20-%202024-1.pdf)
 
-### 🖌️ Cores
+### 🖌️ CORES
 [Clique Aqui](https://github.com/frevisto/hardstop/blob/main/miscelaneo/Cores%20e%20Contrastes.pdf)
 
-### ⚾ BD
+### ⚾ BD 
 [Clique Aqui](https://github.com/frevisto/hardstop/blob/main/miscelaneo/bd_conceitual.jpg)
+
+### 🎨 FIGMA
+[Clique Aqui](https://www.figma.com/file/05ojYc0TRL8PFXyYzmALwF/SIST-CERT?type=design&node-id=0%3A1&mode=design&t=znpc1XpZpwFwm7Yc-1)
 
 # ⚙️ TOOLS
 

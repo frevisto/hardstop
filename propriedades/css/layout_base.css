@@ -1,8 +1,9 @@
 *{
-    font-family: calibri;
+    font-family: sans-serif;
     margin:0;
     padding:0;
     box-sizing: border-box;
+    text-align: center;
 }
 body{
     display:flex;
@@ -28,7 +29,7 @@ header #logo{
 #openmenu,#closemenu{
     float:inline-start;
     border: none;
-    background-color: none;
+    background-color: transparent;
     font-size: 30px;
     font-weight: bold;
     padding: 0px 5px 0px 5px;
@@ -52,31 +53,111 @@ a{
 }
 main{
     flex: 1 1 850px;
-    height: calc(130vh - 224px);
+    height: calc(130vh - 200px);
     background: white;
     border-radius: 0 20px 0 0;
+    overflow: scroll;
+    font-size: 20;
 }
+.cdst_inputs{
+  flex: 1 1 300;  
+  width:fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.laabel{
+    flex: 1 1 300; 
+    margin-top: 50px;
+}
+.laabel>input{
+    text-align: left;
+    width: 300px;
+}
+.buttonal{
+    margin: auto;
+    width: 100%;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+#cdst_bot{
+    background-color: rgb(190, 182, 182);
+    height: 30px;
+    border: none;
+    width: 100px;
+}
+#user_name{
+    padding: 20px;
+    border: none;
+    background-color: rgb(190, 182, 182);
+}
+#user_address{
+    padding: 20px;
+    border: none;
+    background-color: rgb(190, 182, 182);
+}
+
 aside{
     flex: 1 1 100px;
-    background: linear-gradient(#B4DFFF,#5D84A1);
+    background: transparent;
 
 }
 aside a{
     display: flex;
-    align-self: center;
+    align-self:self-end;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 300px;
-    flex: 1 1 200px;
- 
-    
+    width: 30%;
+    height: 30%;
+    flex: 1 1 200px; 
+}
+/* .menudlinks{
+    background-color:transparent;
+    margin-left: 25%;
+    margin-right: -25%;
+    margin-top: 20%;
+    width: 250%;
+    height: 60%;
+
+}
+.headermenu{
+    background-color: blue;
+    color: white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+}
+#conteudomenu{
+    background-color: white;
+    color: black;
+    margin-top: 10%;
+    height: 80%;
+    overflow: scroll;
+} */
+#logohardstop{
+    height: 150px;
+    width: 150px;
 }
 .titulo{
+    /* text-decoration: underline; */
+    font-weight: 400;
     text-align: center;
     padding: 35px;
     padding-bottom: 20px;
 }
+
+.sumario>li{
+    padding: 40px;
+}
+.sumario a{
+    font-size:x-large;
+    font-weight: 400;
+    text-decoration: underline;
+    
+}
+
 .conteudo{
     padding-top: 20px;
     padding-left: 40px;  
@@ -116,6 +197,12 @@ aside a{
         height: 100%;
         width:10%;
     }
+    .cdst_inputs{
+        flex: auto;
+    }
+    .buttonal{
+        flex: auto;
+    }
 }
 @media only screen and (max-width: 717px){
     #openmenu, #closemenu{
@@ -141,9 +228,9 @@ aside a{
         display:none;
         margin: 0;
     }
-nav>a{
-    background-color:rgba(255,255,255,0) ;
-}
+    nav>a{
+        background-color:rgba(255,255,255,0) ;
+    }
     main{
         border-radius: 20px;
     }
@@ -156,22 +243,47 @@ nav>a{
         height: 55%;
         width:30%; 
     }
+    .laabel{
+        text-align: center;
+    }
+    #user_name{
+        flex: auto;
+        width: 100%;
+    }
+    #user_address{
+        width: 100%;
+    }
+    #cdst_bot{
+        width: 55%;
+    }
 }
 #login_field {
     /* display: flex; */
     position: right;
     float: right;
     padding: 10%;
-  }
-  #login_fieldset {
-    padding: 15px;
-    border-radius: 3px;
-    border-bottom-right-radius: 20px;
-  }
-  div.cadin > input{
-    width: 175px;
-    padding: 4px;
-  }
-  #okcad {
-    padding-top: 3px;margin-left: 150px;
-  }
+}
+#login_fieldset {
+padding: 50px;
+border-radius: 3px;
+border-bottom-right-radius: 20px;
+}
+div.cadin > input{
+width: 175px;
+padding: 4px;
+}
+#okcad {
+padding-top: 3px;margin-left: 150px;
+}
+#texto_login{
+    padding-top: 20px;
+    padding-left: 40px;  
+    padding-right: 40px;
+    text-justify:auto ;
+    text-align: center;
+   font-size:x-large;
+}
+#destaque {
+    font-weight: bold;
+      
+}
