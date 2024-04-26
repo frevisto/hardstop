@@ -11,3 +11,5 @@
 |      🟢 outras                     |   GitHub: User stories com Ator, ação e motivo                 |       💚 Concluido            |  3️⃣ | 
 |      🟢 outras                      |   GitHub: backlog do produto e sprint priorizado (baixa, média e alta prioridade)                 |   💚 Concluido                | 3️⃣ |
 |      🟢 outras                      |   Trello: cronograma de tarefas com link para o GitHub                 |    💚 Concluido               | 3️⃣ |
+
+!sprint1_burndown.jpg
