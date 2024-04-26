@@ -53,7 +53,7 @@ a{
 }
 main{
     flex: 1 1 850px;
-    height: calc(130vh - 224px);
+    height: calc(130vh - 200px);
     background: white;
     border-radius: 0 20px 0 0;
     overflow: scroll;
@@ -141,10 +141,23 @@ aside a{
     width: 150px;
 }
 .titulo{
+    /* text-decoration: underline; */
+    font-weight: 400;
     text-align: center;
     padding: 35px;
     padding-bottom: 20px;
 }
+
+.sumario>li{
+    padding: 40px;
+}
+.sumario a{
+    font-size:x-large;
+    font-weight: 400;
+    text-decoration: underline;
+    
+}
+
 .conteudo{
     padding-top: 20px;
     padding-left: 40px;  
