@@ -21,11 +21,14 @@ header,nav,aside{
 
 header{
     flex: 1 1 100vw;
-    height: 100px;
+    height: 8vh;
 }
 header #logo{
-    flex: 0 1 200px;
+    display: flex;
+    flex: 0 1 100px;
+    justify-content:center;
 }
+
 #openmenu,#closemenu{
     float:inline-start;
     border: none;
@@ -187,9 +190,9 @@ aside a{
     }
     aside a{
         display: flex;
-        align-self: center;
-        align-items: center;
-        justify-content: center;
+        align-self: center, bottom;
+        align-items: center, bottom;
+        justify-content: center, bottom;
         height: 100%;
     }
     #logohardstop{
@@ -203,14 +206,25 @@ aside a{
     .buttonal{
         flex: auto;
     }
+    
+
 }
 @media only screen and (max-width: 717px){
+    a#logo{
+        width: fit-content;
+    }
+    #butc{
+        width: fit-content;        
+
+    }
     #openmenu, #closemenu{
-        display: block;
+
+        display:block;
         
     }
     #openmenu{
-        margin-left: none;
+        content: icon;
+        align-self: center;
     }
     #closemenu{
         position: fixed;
@@ -222,7 +236,7 @@ aside a{
         flex-direction: column;
         width: 100vw;
         height: 100vh;
-        background: rgba(255,255,255,0.8);
+        background: rgba(255,255,255,0.75);
         align-items: center;
         justify-content: center;
         display:none;
@@ -258,7 +272,6 @@ aside a{
     }
 }
 #login_field {
-    /* display: flex; */
     position: right;
     float: right;
     padding: 10%;
@@ -268,12 +281,40 @@ padding: 50px;
 border-radius: 3px;
 border-bottom-right-radius: 20px;
 }
+#logleg{
+    text-align: right;
+}
+#okleg{
+    width: 65px;
+    height: 30px;
+}
+#input-mail{
+    height: 35px;
+    width: 200px;
+    background-color: #8672993a;
+    font-weight: 400;
+    font-size: medium;
+}
+#cadt{
+    /* padding-top: 30px; */
+    text-align: center
+}
+#cadtx{
+    font-size: large;
+}
+#cadtx>a{
+    color:rgba(255, 0, 0, 0.755); 
+    text-decoration: dotted, 1px;
+}
 div.cadin > input{
 width: 175px;
 padding: 4px;
 }
 #okcad {
 padding-top: 3px;margin-left: 150px;
+}
+#okdiv{
+    padding-top: 3px;
 }
 #texto_login{
     padding-top: 20px;
