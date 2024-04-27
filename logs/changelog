@@ -17,7 +17,8 @@ outro elemento, preservando a escala dos objetos.
 - Vitor F. - "Merge successeful" - Necessário que se adicione no arquivo "~/propriedades/js" 
 os códigos em JS. Quanto às mudanças de hoje no arquivo, se trata de um merge que foi 
 feito anteriormente por mim e Nicolas Aquino porém upado no repositório "Nickaqui/hardstop".
-- Claudio S. Update README.md conceituando o readme com os elementos precisos do projeto.
+
+10/04 - Claudio S. Update README.md conceituando o readme com os elementos precisos do projeto.
 
 11/04 - Claudio S. - Layout base html e css.
 
@@ -28,4 +29,7 @@ para ser usado como modelo para criação das páginas.
 
 23/04 - Claudio S. - junção com sistema js, para acessar o banco de dados; teste de server.
 
-24/04- Claudio S.  - Pagina de questôes; finalização e teste de login.,
+24/04 - Claudio S.  - Pagina de questôes; finalização e teste de login.,
+
+26/04 - Vitor F. - Inspeção e organização das classes e ids de CSS e HTML, display, etc., planejamento
+para a adição dos sites institucionais.
