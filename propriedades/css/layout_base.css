@@ -206,7 +206,9 @@ aside a{
     .buttonal{
         flex: auto;
     }
-    
+    #ftclg{
+        height: 4px;
+    }   
 
 }
 @media only screen and (max-width: 717px){
