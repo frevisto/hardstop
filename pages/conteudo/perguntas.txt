@@ -26,7 +26,7 @@
  26- A tomada de decisões fica à poder do Dev Team? FALSO
  27- Product Owner (P.O.) não tem poder nenhum sobre o produto e não auxilia em seu desenvolvimento? FALSO
  28- O papel do Scrum Master é auxiliar o funcionamento e operação da equipe? VERDADEIRO
- 29- Os desenvolvedores não tem como função saber o funcionamento da metodologia Scrum? FALSO
+ 29- O Dev Team não tem como função saber o funcionamento da metodologia Scrum? FALSO
  30- Scrum recomenda o uso de ferramentas para gerenciar o trabalho da equipe. VERDADEIRO
  31- Os pilares do Scrum são adaptação, inspeção e transparencia? VERDADEIRO
  32- Os pilares do Scrum são adaptação, praticidade e transparencia? FALSO
@@ -38,3 +38,13 @@
  38- Assim que firmado um objetivo ele ainda pode sofrer alterações durante a extensão do projeto? VERDADEIRO
  39- O Scrum pode ajudar as pessoas a desenvoverem uma melhor organização pessoal? VERDADEIRO
  40- O Scrum ao final de cada sprint prioriza a entrega da versão mais recente do projeto ao cliente? VERDADEIRO 
+ 41- Quando um membro do Dev Team possui dúvidas relacionadas ao Product Backlog o Product Owner deve ser consultado? VERDADEIRO
+ 42- Dev Team é um elemento fundamental para o desenvolvimento de um projeto? VERDADEIRO
+ 43- Toda a comunicação entre o cliente e o Dev Team é feita por intermedio do Scrum Master? FALSO
+ 44- Product Owner é a posição mais próxima do cliente? VERDADEIRO
+ 45- O Scrum Master facilita a organização de reuniões? VERDADEIRO
+ 46- Product Owner é a pessoa que não tem papel na organização e desenvolvimento do projeto? FALSO
+ 47- Product Owner deve compreender as necessidades do cliente? VERDADEIRO
+ 48- O Scrum Master executa a mesma função do Dev Team? FALSO
+ 49- O Scrum Master protege o Dev Team de solicitações de trabalhos excessivos? VERDADEIRO
+ 50- Mesmo sem o Dev Team o Scrum ainda pode ser realizado? FALSO 
