@@ -40,13 +40,13 @@ header #logo{
     display: none;
 }
 nav{ 
-    flex: 1 1 100vw;  
+    flex: 1 1 73vw;  
     align-items: center;
     justify-content: flex-end;
     background: #B4DFFF;
 }
 nav a{
-    margin: 5%;
+    margin: 2%;
     font-size: 20pt;
     background: #B4DFFF;
 }
@@ -206,9 +206,6 @@ aside a{
     .buttonal{
         flex: auto;
     }
-    #ftclg{
-        height: 4px;
-    }   
 
 }
 @media only screen and (max-width: 717px){
