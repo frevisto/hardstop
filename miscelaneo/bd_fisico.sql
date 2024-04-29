@@ -55,7 +55,7 @@ VALUES
 ('Um dos valores usados pelo Scrum é a dedicação?', false),
 ('A falha ou falta de uma parte do projeto na entrega não prejudica os desenvolvedores no Scrum?', false),
 ('A tomada de decisões fica à poder do Dev Team?', false),
-('Product Owner (P.O.) não tem poder nenhum sobre o produto e não auxilia em seu desenvolvimento?', false,)
+('Product Owner (P.O.) não tem poder nenhum sobre o produto e não auxilia em seu desenvolvimento?', false),
 ('O papel do Scrum Master é auxiliar o funcionamento e operação da equipe?', true),
 ('O Dev Team não tem como função saber o funcionamento da metodologia Scrum?', false),
 ('Scrum recomenda o uso de ferramentas para gerenciar o trabalho da equipe.', true),
