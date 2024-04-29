@@ -1,5 +1,5 @@
 <div align="middle">
-  <img #logo src="https://github.com/claudsaints/hardstop/blob/main/assets/loho_hst.gif" align="middle">
+  <img #logo src="https://github.com/frevisto/hardstop/blob/main/propriedades/images/loho_hst.gif" align="middle">
 </div>
 <div>
  <h1>📍SOBRE</h1>
