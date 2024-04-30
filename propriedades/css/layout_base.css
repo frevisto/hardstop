@@ -68,6 +68,12 @@ main{
     flex:0.25;
     background-color: #5D84A1;
 }
+#nmu{
+    padding-top: 20px;
+}
+#fmu{
+    padding-top: 10px;
+}
 .cdst_inputs{
   flex: 1 1 300;  
   width:fit-content;
