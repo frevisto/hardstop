@@ -181,12 +181,16 @@ aside a{
    font-size: larger;
    word-break: keep-all;
 }
-#avancar_pagina{
-    position: absolute;
-    bottom: 200;
-    right: 700;
-    width: 170;
-    height: 70;
+.voltar_pagina{
+    float: left;
+    width: 170px;
+    height: 70px;
+    font-size: large;
+}
+.avancar_pagina{
+    float: right;
+    width: 170px;
+    height: 70px;
     font-size: large;
 }
 @media only screen and (max-width: 923px){
