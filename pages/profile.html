@@ -5,8 +5,12 @@
     rel="stylesheet"
     type="text/css"
     />
+    <script src="../js/geral.js"></script>
     <script>
-      document.getElementById("nomeusr").textContent = nome
+      let nome = localStorage.getItem("usuario");
+      let todos = JSON.parse(nome);
+      let user_name = (todos.nome);
+      document.getElementById("nomeusr").innerText = user_name;
     </script>
 
     <link rel="shortcut icon" href="../propriedades/images/favicon.ico" type="image/x-icon">
