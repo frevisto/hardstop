@@ -6,21 +6,14 @@
     type="text/css"
     />
     <script src="../js/geral.js"></script>
-    <script>
-      let nome = localStorage.getItem("usuario");
-      let todos = JSON.parse(nome);
-      let user_name = JSON.stringify(todos.nome);
-      console.log(user_name);
-      console.log("nmu");
-      document.getElementById("nmu").innerText = user_name;
-    </script>
-
+    <script src="../js/dados.js"></script>
+    
     <link rel="shortcut icon" href="../propriedades/images/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
   </head>
-  <body>
+  <body onload="chamarNome()">
     <header>
       
       <button id="openmenu">&#9776;</button>
@@ -54,12 +47,11 @@
     </header>
     <main>
         <div id="prfl">
-          <img style="height: 200px;
-          padding-top: 25px;" src="../miscelaneo/pfp_default.png">
-          <h1 id="nmu">
-            ...
-          </h1>
+          <img style="height: 200px; padding-top: 25px;" src="../miscelaneo/pfp_default.png">
+          <div id="var_nome"></div>
+
         </div>
+        
       
 
 
