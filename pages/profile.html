@@ -9,8 +9,10 @@
     <script>
       let nome = localStorage.getItem("usuario");
       let todos = JSON.parse(nome);
-      let user_name = (todos.nome);
-      document.getElementById("nomeusr").innerText = user_name;
+      let user_name = JSON.stringify(todos.nome);
+      console.log(user_name);
+      console.log("nmu");
+      document.getElementById("nmu").innerText = user_name;
     </script>
 
     <link rel="shortcut icon" href="../propriedades/images/favicon.ico" type="image/x-icon">
@@ -54,7 +56,9 @@
         <div id="prfl">
           <img style="height: 200px;
           padding-top: 25px;" src="../miscelaneo/pfp_default.png">
-          <p id="nomeusr"></p>
+          <h1 id="nmu">
+            ...
+          </h1>
         </div>
       
 
