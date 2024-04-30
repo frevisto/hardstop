@@ -7,12 +7,13 @@
       type="text/css"
     />
     <script src="../js/geral.js"></script>
+    <script src="../js/dados.js"></script>
     <link rel="shortcut icon" href="../propriedades/images/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
   </head>
-  <body onload="chamarNome();chamarEmail()">
+  <body onload="chamarNome();chamarEmail();">
     <header>
       <button id="openmenu">&#9776;</button>
 
@@ -36,21 +37,10 @@
     </header>
     <main>
         <div id="prfl">
-          <img style="height: 200px;
-          padding-top: 25px;" src="../miscelaneo/pfp_default.png">
-  
+          <img style="height: 200px; padding-top: 25px;" src="../miscelaneo/pfp_default.png">
+          <div id="var_nome"></div>
+          <div id="fmu"></div>
         </div>
-      
-
-
-
-
-
-
-
-
-
-
     </main>
     <aside>
       <div class="menudlinks">
