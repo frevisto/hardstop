@@ -13,7 +13,7 @@ async function criar(req, res) {
 
   // Insere um registro na tbusuario
   const resposta = await pool.query(
-    "INSERT INTO tbusuario(mail,nome) VALUES ($1,$2) RETURNING idusuario",
+    "INSERT INTO Usuario(mail,nome) VALUES ($1,$2) RETURNING idusuario",
     [mail, nome]
   );
   // Retorna o registro inserido no formato JSON
@@ -28,7 +28,7 @@ async function buscar(req, res) {
   
   // Procura na tbusuario o 1o registro que satisfaz as condições
   let resposta = await pool.query(
-    "SELECT idusuario,mail,nome FROM tbusuario WHERE mail=$1 LIMIT 1",
+    "SELECT idusuario,mail,nome FROM Usuario WHERE mail=$1 LIMIT 1",
     [mail]
   );
   // Verifica se o usuário existe na tbusuario

@@ -1,8 +1,7 @@
 CREATE TABLE Usuario (
-  idUsuario SERIAL NOT NULL,
-  email VARCHAR(50) NOT NULL,
-  nome VARCHAR(100) NOT NULL,
-  PRIMARY KEY(idUsuario)
+  idusuario SERIAL PRIMARY KEY,
+  mail VARCHAR(50) NOT NULL,
+  nome VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE Prova (
