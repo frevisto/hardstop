@@ -55,12 +55,18 @@ a{
     color:inherit;
 }
 main{
+    display: flex;
     flex: 1 1 850px;
     height: calc(130vh - 200px);
     background: white;
     border-radius: 0 20px 0 0;
     overflow: scroll;
     font-size: 20;
+}
+#prfl{
+    display:list-item;
+    flex:0.25;
+    background-color: #5D84A1;
 }
 .cdst_inputs{
   flex: 1 1 300;  

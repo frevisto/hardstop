@@ -1,10 +1,14 @@
 <html lang="pt-BR">
   <head>
     <link
-      href="../propriedades/css/layout_base.css"
-      rel="stylesheet"
-      type="text/css"
+    href="../propriedades/css/layout_base.css"
+    rel="stylesheet"
+    type="text/css"
     />
+    <script>
+      document.getElementById("nomeusr").textContent = nome
+    </script>
+
     <link rel="shortcut icon" href="../propriedades/images/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,32 +16,53 @@
   </head>
   <body>
     <header>
+      
       <button id="openmenu">&#9776;</button>
+        
       <a href="https://github.com/frevisto/hardstop" id="logo"
-        ><img
-          id="logoimg"
+      ><img id="logoimg"
+
           src="../propriedades/images/logo_syst.png"
+          
       /></a>
+
       <nav id="menu">
         <button id="closemenu">X</button>
         <a href="#"></a>
-        <a href="#"></a>
-        <a href="#" target="_blank">
+        <a href="#"></a> 
+
+        <a href="https://www.cps.sp.gov.br/" target="_blank">
           <img 
           src="../miscelaneo/cps_logo.jpg"
           style="height: 40px;"/>
         </a>
 
-        <a href="#" target="_blank">
+        <a href="http://www.fatecjacarei.com.br/" target="_blank">
           <img 
           src="../miscelaneo/fatec_logo.png"
           style="height: 40px;"/>
         </a>
 
       </nav>
+
     </header>
     <main>
-        
+        <div id="prfl">
+          <img style="height: 200px;
+          padding-top: 25px;" src="../miscelaneo/pfp_default.png">
+          <p id="nomeusr"></p>
+        </div>
+      
+
+
+
+
+
+
+
+
+
+
     </main>
     <aside>
       <div class="menudlinks">
