@@ -3,7 +3,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    text-align: center;
 }
 body{
     display:flex;
@@ -21,7 +20,7 @@ header,nav,aside{
 
 header{
     flex: 1 1 100vw;
-    height: 8vh;
+    height: 60px;
 }
 header #logo{
     display: flex;
@@ -55,7 +54,6 @@ a{
     color:inherit;
 }
 main{
-    display: flex;
     flex: 1 1 850px;
     height: calc(130vh - 224px);
     background: white;
