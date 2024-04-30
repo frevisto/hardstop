@@ -12,7 +12,7 @@ function listarQuestao() {
     })
     .then((data) => {
       let questoes =""; 
-      for(i = 0; i < data.length; i++){
+      for(i = 0; i < 25; i++){
         questoes += `<div>
             <div>${data[i].enunciado}</div>
             <div>

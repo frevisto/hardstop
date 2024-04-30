@@ -13,10 +13,9 @@ CREATE TABLE Prova (
 );
 
 CREATE TABLE Perguntas (
-  idPerguntas SERIAL NOT NULL,
+  idPerguntas SERIAL PRIMARY KEY,
   enunciado VARCHAR(255) NOT NULL,
-  resposta BOOL NOT NULL,
-  PRIMARY KEY(idPerguntas)
+  resposta BOOL NOT NULL
 );
 
 CREATE TABLE Historico_Provas (
