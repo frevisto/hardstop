@@ -61,15 +61,36 @@ main{
     overflow: scroll;
     font-size: 20;
 }
+#mainprfl{
+    flex: 1 1 850px;
+    display: flex;
+    height: calc(130vh - 224px);
+    background: white;
+    border-radius: 15px 20px 0 20px;
+    overflow: scroll;
+    font-size: 20;
+}
 #prfl{
-    display:list-item;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    display: flex;
     flex:0.25;
     background-color: #5D84A1;
+    border-radius: 15px;
+}
+#prfl > *{
+    margin: 10px;
+}
+#var_nome{
+    font-weight: bold;
+    /* padding-top: 5px; */
 }
 #nmu{
     padding-top: 20px;
 }
 #fmu{
+    font-weight: bold;
     padding-top: 10px;
 }
 .cdst_inputs{
@@ -125,13 +146,15 @@ aside a{
     height: 30%;
     flex: 1 1 200px; 
 }
-/* .menudlinks{
+.menudlinks{
+    align-self: auto;
     background-color:transparent;
     margin-left: 25%;
     margin-right: -25%;
     margin-top: 20%;
     width: 250%;
     height: 60%;
+
 
 }
 .headermenu{
@@ -148,7 +171,7 @@ aside a{
     margin-top: 10%;
     height: 80%;
     overflow: scroll;
-} */
+}
 #logohardstop{
     height: 150px;
     width: 150px;
@@ -193,6 +216,14 @@ aside a{
     height: 70px;
     font-size: large;
 }
+#btsmr{
+    background-color: darkgray;
+    border:cadetblue 10px;
+    border-radius: 5px;
+    font-weight: 400;
+    color: aliceblue;
+    height: 40px; width: 70px;
+}
 @media only screen and (max-width: 923px){
     main{
         height:calc(100vh- 330px);
@@ -220,7 +251,9 @@ aside a{
     .buttonal{
         flex: auto;
     }
-
+    #prfl > *{
+        margin: 10px;
+    }
 }
 @media only screen and (max-width: 717px){
     a#logo{
@@ -282,6 +315,15 @@ aside a{
     }
     #cdst_bot{
         width: 55%;
+    }
+    #prfl{
+        width: fit-content;
+        display: flex;
+        align-items: flex-start;
+        /* justify-content: center; */
+    }
+    #prfl > *{
+        margin: 10px;
     }
 }
 #login_field {
