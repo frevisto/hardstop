@@ -27,6 +27,9 @@ header #logo{
     flex: 0 1 100px;
     justify-content:center;
 }
+#logo:hover{
+    filter: invert();
+}
 
 #openmenu,#closemenu{
     float:inline-start;
@@ -135,47 +138,44 @@ main{
 aside{
     flex: 1 1 100px;
     background: transparent;
-
+    flex-direction: column;
 }
-aside a{
+#hslogo{
     display: flex;
-    align-self:self-end;
-    align-items: center;
     justify-content: center;
-    width: 30%;
-    height: 30%;
-    flex: 1 1 200px; 
+    margin-top: 20px;
 }
 .menudlinks{
-    align-self: auto;
-    background-color:transparent;
-    margin-left: 25%;
-    margin-right: -25%;
-    margin-top: 20%;
-    width: 250%;
-    height: 60%;
-
-
-}
-.headermenu{
-    background-color: blue;
-    color: white;
-    height: 100%;
-    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding-top: 10%;
+    background-color: #5D84A1;
+    color: white;
+    height: 50%;
+    font-weight: bold;
+    border-radius: 15px;
 }
 #conteudomenu{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
     background-color: white;
     color: black;
-    margin-top: 10%;
     height: 80%;
+    width: 100%;
     overflow: scroll;
+}
+#conteudomenu > a:hover{
+    color: #5D84A1;
 }
 #logohardstop{
     height: 150px;
     width: 150px;
 }
+#logohardstop:hover{
+    filter: invert();
+}
+
 .titulo{
     /* text-decoration: underline; */
     font-weight: 400;
@@ -200,9 +200,9 @@ aside a{
     padding-right: 40px;
     text-justify: distribute;
     text-align: justify,left;
-   font-size: large;
-   font-size: larger;
-   word-break: keep-all;
+    font-size: large;
+    font-size: larger;
+    word-break: keep-all;
 }
 .voltar_pagina{
     float: left;
@@ -230,20 +230,9 @@ aside a{
         
     }
     aside{
-        flex:1 1 10vw;
+        flex:1 1 200px;
+
         height:fit-content;
-    }
-    aside a{
-        display: flex;
-        align-self: center, bottom;
-        align-items: center, bottom;
-        justify-content: center, bottom;
-        height: 100%;
-    }
-    #logohardstop{
-        object-fit: cover;
-        height: 100%;
-        width:10%;
     }
     .cdst_inputs{
         flex: auto;
@@ -293,15 +282,6 @@ aside a{
     }
     main{
         border-radius: 20px;
-    }
-    aside a{
-        height: auto;
-        width: auto;
-    }
-    #logohardstop{
-        object-fit: cover;
-        height: 55%;
-        width:30%; 
     }
     .laabel{
         text-align: center;
