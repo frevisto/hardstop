@@ -1,4 +1,4 @@
-
+var globalid = [];
 function listarQuestao() {
   // Verifica se o usuário está logado
   if (!usuarioLogado) {
@@ -20,6 +20,7 @@ function listarQuestao() {
       .then((data) => {
         let questoes = "";
         for (i = 0; i < 20; i++) {
+          globalid[i]= JSON.parse(data[i].idperguntas);
           questoes += `<div class='questao'>
             <div class='linha-enunciado'>${data[i].enunciado}</div>
             <div class='linha-alternativa'>
@@ -40,4 +41,25 @@ function listarQuestao() {
         console.error("Erro:", error);
       });
   }
+}
+// TESTE
+//json para armazenar as respostas 
+var resposta= {};
+// função para chamar ao enviar
+function salvarResposta(){
+  //var inputs recebendo do documento onde o método querry seleciona o elemento input tipo radio, e retorna uma nodelist. 
+  inputs = document.querySelectorAll('input[type="radio"]:checked');
+  inputs.forEach(function(inputs) {
+    var nome= inputs.name;
+    var valor= inputs.checked ? inputs.value : null;
+    resposta[nome] = valor;
+
+  });
+  console.log("Respostas: ",resposta);
+  console.log(inputs)
+
+  //for(i=0;i<20;i++){
+  // console.log('resposta da posição de : ',globalid[i],resposta[i]);        
+  //}
+ 
 }

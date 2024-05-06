@@ -3,6 +3,7 @@
     <link href="../../propriedades/css/layout_base.css" rel="stylesheet" type="text/css"/>
     <script src="../../js/geral.js"></script>
     <script src="../../js/questionario.js"></script>
+    <script src="../../js/nota.js"></script>
     <link rel="shortcut icon" href="../propriedades/images/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,7 +36,11 @@
       <div class="box">
           <h3>Questões</h3>
           <div id="saida"></div>
+          <div>
+            <button id="but_dados" onclick="salvarResposta()">Enviar</button>
+          </div>
       </div>
+
     </main>
     <aside>
       <a href="https://github.com/frevisto/hardstop" target="_blank" id="hslogo">
