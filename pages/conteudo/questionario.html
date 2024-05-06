@@ -3,7 +3,6 @@
     <link href="../../propriedades/css/layout_base.css" rel="stylesheet" type="text/css"/>
     <script src="../../js/geral.js"></script>
     <script src="../../js/questionario.js"></script>
-    <script src="../../js/questao.js"></script>
     <link rel="shortcut icon" href="../propriedades/images/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,12 +29,12 @@
       </nav>
     </header>
     <main>
-      <div id="botao-logout" class="botao" onclick="logout()">Logout</div>
-      <div class="box">
+      <div class="barra_log">  
+        <div id="botao-logout" class="botao" onclick="logout()">Logout</div>
       </div>
-        <h3>Questões</h3>
-        <div id="saida"></div>
-        <button id="okpr" onclick="enviar()">
+      <div class="box">
+          <h3>Questões</h3>
+          <div id="saida"></div>
       </div>
     </main>
     <aside>

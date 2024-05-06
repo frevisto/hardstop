@@ -12,12 +12,12 @@ function listarQuestao() {
     })
     .then((data) => {
       let questoes =""; 
-      for(i = 0; i < 25; i++){
+      for(i = 0; i < 20; i++){
         questoes += `<div>
             <div>${data[i].enunciado}</div>
             <div>
-              <input type="radio" value="true" name="questao-opcao-${data[i].idquestao}" id="verdadeiro${i}"><label for="verdadeiro${i}">Verdadeiro</label>
-              <input type="radio" value="false" name="questao-opcao-${data[i].idquestao}" id="falso${i}"><label for="falso${i}">Falso</label>
+              <input type="radio" value="true" name="questao-opcao-${data[i].idperguntas}" id="verdadeiro${i}"><label for="verdadeiro${i}">Verdadeiro</label>
+              <input type="radio" value="false" name="questao-opcao-${data[i].idperguntas}" id="falso${i}"><label for="falso${i}">Falso</label>
             </div>
           </div>`;
       }

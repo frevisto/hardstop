@@ -4,7 +4,7 @@ function listarQuestao() {
   if (!usuarioLogado) {
     // Esconde o botão de logout
     document.getElementById("botao-logout").style.display = "none";
-    document.getElementById("saida").innerHTML = "<p>O usuário não está logado. Clique para efetuar o <a href='./login.html'>login</a>.</p>";
+    document.getElementById("saida").innerHTML = "<p>O usuário não está logado. Clique para efetuar o <a href='../../index.html'>login</a>.</p>";
   } else {
     // Configuração da requisição
     const url = `${urlbase}/questao`;
@@ -19,16 +19,16 @@ function listarQuestao() {
       })
       .then((data) => {
         let questoes = "";
-        for (i = 0; i < data.length; i++) {
+        for (i = 0; i < 20; i++) {
           questoes += `<div class='questao'>
             <div class='linha-enunciado'>${data[i].enunciado}</div>
             <div class='linha-alternativa'>
               <div class='item-alternativa'>
-                <input type="radio" value="true" name="questao-opcao-${data[i].idquestao}" id="verdadeiro${i}">
+                <input type="radio" value="true" name="questao-opcao-${data[i].idperguntas}" id="verdadeiro${i}">
                 <label for="verdadeiro${i}">Verdadeiro</label>
               </div>
               <div class='item-alternativa'>
-                <input type="radio" value="false" name="questao-opcao-${data[i].idquestao}" id="falso${i}">
+                <input type="radio" value="false" name="questao-opcao-${data[i].idperguntas}" id="falso${i}">
                 <label for="falso${i}">Falso</label>
               </div>
             </div>
