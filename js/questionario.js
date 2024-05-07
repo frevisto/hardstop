@@ -43,8 +43,8 @@ function listarQuestao() {
   }
 }
 // TESTE
-//json para armazenar as respostas 
-var resposta= {};
+var resposta=[];
+var recepitac=[];
 // função para chamar ao enviar
 function salvarResposta(){
   //var inputs recebendo do documento onde o método querry seleciona o elemento input tipo radio, e retorna uma nodelist. 
@@ -52,14 +52,18 @@ function salvarResposta(){
   inputs.forEach(function(inputs) {
     var nome= inputs.name;
     var valor= inputs.checked ? inputs.value : null;
-    resposta[nome] = valor;
-
+    resposta.push(valor);
   });
-  console.log("Respostas: ",resposta);
-  console.log(inputs)
-
-  //for(i=0;i<20;i++){
-  // console.log('resposta da posição de : ',globalid[i],resposta[i]);        
-  //}
- 
+  if (resposta.length == 20){
+    for(i=0;i<20;i++){
+      recepitac[i] = resposta[i];
+    }
+    console.log("Vinte Proxima");
+  }else {
+    resposta = [];
+    alert('Você deve selecionar todas para continuar.')
+  } 
+  //window.location.href = "../pages/resultado.html";
 }
+
+export {salvarResposta,listarQuestao,globalid,recepitac};
