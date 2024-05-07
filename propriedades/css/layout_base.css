@@ -229,15 +229,17 @@ aside{
 }
 .voltar_pagina{
     float: left;
-    width: 170px;
-    height: 70px;
+    width: 130px;
+    height: 50px;
     font-size: large;
+    border-radius: 20px;
 }
 .avancar_pagina{
     float: right;
-    width: 170px;
-    height: 70px;
+    width: 130px;
+    height: 50px;
     font-size: large;
+    border-radius: 20px;
 }
 #btsmr{
     background-color: darkgray;
