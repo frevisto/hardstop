@@ -1,0 +1,11 @@
+# Exported from Render on 2024-05-08T00:59:44Z
+services:
+- type: web
+  name: hardstop
+  runtime: node
+  repo: https://github.com/frevisto/hardstop
+  plan: free
+  region: oregon
+  buildCommand: yarn
+  startCommand: yarn start
+version: "1"
