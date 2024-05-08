@@ -8,4 +8,12 @@ services:
   region: oregon
   buildCommand: yarn
   startCommand: yarn start
+  envVars:
+      - key: localhost:5432 # Sets DATABASE_URL to the connection string of the hadstop database
+        fromDatabase:
+          name: hardstop
+          property: postgreSQL
+databases:
+  - name: hardstop # A PostgreSQL database running on a free instance
+    plan: free
 version: "1"
