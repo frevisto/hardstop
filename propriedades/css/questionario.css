@@ -5,3 +5,18 @@
 #saida > div{
     border: 1px solid lightsteelblue;
 }
+#budiv{
+    padding: 20px;
+    display: grid;
+    align-content: center;
+}
+#but_dados{
+    height: 50px;
+    font-weight: bolder;
+    font-size:x-large;
+    color: hsl(0, 0%, 100%);
+    background-color:rgba(0, 128, 0, 0.253) ;
+    border-color:aliceblue;
+    border-radius: 25px;
+
+}
