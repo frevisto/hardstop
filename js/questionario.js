@@ -65,5 +65,3 @@ function salvarResposta(){
   } 
   //window.location.href = "../pages/resultado.html";
 }
-
-export {salvarResposta,listarQuestao,globalid,recepitac};

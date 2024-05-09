@@ -1,0 +1,7 @@
+#saida div{
+    text-align: center;
+    padding: 8px;
+}
+#saida > div{
+    border: 1px solid lightsteelblue;
+}
