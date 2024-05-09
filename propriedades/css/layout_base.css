@@ -164,29 +164,36 @@ aside{
 }
 /* ITENS */
 #hslogo{
+    padding-top: 100px;
     display: flex;
+    align-self: center;
     justify-content: center;
-    margin-top: 20px;
 }
 .menudlinks{
+    margin-top: 80px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-self: center;
     text-align: center;
     background-color: #5D84A1;
     color: white;
-    height: 50%;
+    height: 35%;
+    width: 60%;
     font-weight: bold;
     border-radius: 15px;
 }
+
 #conteudomenu{
     display: flex;
     align-self: center;
     flex-direction: column;
     background-color: white;
+    text-align: center;
     color: black;
     height: 80%;
-    width: 100%;
-    overflow: scroll;
+    width: 80%;
+    overflow:scroll;
 }
 #conteudomenu > a:hover{
     color: #5D84A1;
@@ -275,6 +282,13 @@ aside{
     #prfl > *{
         margin: 10px;
     }
+    .menudlinks{
+        height: 70%;
+    }
+    #hslogo{
+        padding-top: 20px;
+    }
+   
 }
 @media only screen and (max-width: 717px){
     a#logo{
