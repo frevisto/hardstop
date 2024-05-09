@@ -241,6 +241,12 @@ aside{
     font-size: large;
     border-radius: 20px;
 }
+.botao_feedback{
+    width: 200px;
+    height: 70px;
+    font-size: large;
+    border-radius: 50px;
+}
 #btsmr{
     background-color: darkgray;
     border:cadetblue 10px;
@@ -389,4 +395,8 @@ padding-top: 3px;margin-left: 150px;
 #destaque {
     font-weight: bold;
       
+}
+#feedback {
+    font-weight: bold;
+    text-align: center;
 }
