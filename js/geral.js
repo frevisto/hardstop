@@ -11,14 +11,16 @@ function carregarLogin() {
   usuarioLogado = JSON.parse(objeto);
 }
 
-function logout() {
-  // Remover a propriedade `usuario` do localStorage
-  localStorage.removeItem("usuario");
+function login() {
   // Redireciona para a página de login
   window.location.href = "./login.html";
 }
 
-function login() {
+
+function logout() {
+  // Remover a propriedade `usuario` do localStorage
+  localStorage.removeItem("usuario");
+  clearInterval(relogiorodando);
   // Redireciona para a página de login
-  window.location.href = "./login.html";
+  window.location.href = "../index.html";
 }

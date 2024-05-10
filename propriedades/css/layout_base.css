@@ -286,6 +286,23 @@ aside{
 #btsmr:hover{
     color: dimgray;
 }
+#btsmv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 130px;
+    height: 50px;
+    font-size: large;
+    border-radius: 20px;
+    background-color:rgba(0, 92, 128, 0.253) ;
+    border-color:aliceblue;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0px 4px 4px #666;
+}
+#btsmv:hover{
+    color: dimgray;
+}
 /* REGRA MEDIA PARA MUDANÇA DE TELA */
 @media only screen and (max-width: 923px){
     main{
