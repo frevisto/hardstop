@@ -59,6 +59,14 @@
 
 # 🐦‍🔥 BURNDOWN
 
+<div align="middle">
+  <img src=https://github.com/frevisto/hardstop/blob/main/miscelaneo/burndown%201.png>
+</div>
+<br>
+<div align="middle">
+  <img src=https://github.com/frevisto/hardstop/blob/main/miscelaneo/burndown%202.png>
+</div>
+
 # ✈️ WIREFRAME
 
 <div align="middle">
