@@ -17,8 +17,8 @@ CREATE TABLE Perguntas (
 
 CREATE TABLE Prova (
   idProva SERIAL NOT NULL,
-  Usuario_idUsuario SERIAL NOT NULL FOREIGN KEY,
-  datahorario TIMESTAMP DEFAULT NOW() NOT NULL;
+  idUsuario SERIAL NOT NULL,
+  datahorario TIMESTAMP DEFAULT NOW() NOT NULL,
   nota FLOAT NULL,
   PRIMARY KEY(idProva),
   FOREIGN KEY(idUsuario)
