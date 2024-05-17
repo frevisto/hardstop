@@ -1,28 +1,45 @@
+DROP TABLE IF EXISTS Usuario;
+DROP TABLE IF EXISTS Perguntas;
+DROP TABLE IF EXISTS Prova;
+DROP TABLE IF EXISTS Historico_Provas;
+
 CREATE TABLE Usuario (
   idusuario SERIAL PRIMARY KEY,
   mail VARCHAR(50) NOT NULL,
   nome VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE Prova (
-  idProva SERIAL NOT NULL,
-  Usuario_idUsuario SERIAL NOT NULL,
-  porcentagem DECIMAL NOT NULL,
-  aprovado BOOL NOT NULL,
-  PRIMARY KEY(idProva, Usuario_idUsuario)
-);
-
 CREATE TABLE Perguntas (
   idPerguntas SERIAL PRIMARY KEY,
-  enunciado VARCHAR(255) NOT NULL,
+  enunciado VARCHAR(1000) NOT NULL,
   resposta BOOL NOT NULL
 );
 
+CREATE TABLE Prova (
+  idProva SERIAL NOT NULL,
+  Usuario_idUsuario SERIAL NOT NULL FOREIGN KEY,
+  datahorario TIMESTAMP DEFAULT NOW() NOT NULL;
+  nota FLOAT NULL,
+  PRIMARY KEY(idProva),
+  FOREIGN KEY(idUsuario)
+    REFERENCES Usuario(idUsuario)
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
+);
+
 CREATE TABLE Historico_Provas (
-  Prova_idProva SERIAL NOT NULL,
-  Perguntas_idPerguntas SERIAL NOT NULL,
-  Prova_Usuario_idUsuario SERIAL NOT NULL,
-  PRIMARY KEY(Prova_idProva, Perguntas_idPerguntas, Prova_Usuario_idUsuario)
+  idProva INTEGER NOT NULL,
+  idPerguntas INTEGER NOT NULL,
+  acerto BOOL NOT NULL,
+  PRIMARY KEY(idProva, idPerguntas),
+  FOREIGN KEY(idPerguntas)
+    REFERENCES Perguntas(idPerguntas)
+      ON DELETE NO ACTION
+      ON UPDATE NO ACTION,
+  FOREIGN KEY(idProva)
+    REFERENCES Prova(idProva)
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
 );
 
 INSERT INTO Perguntas (enunciado, resposta)
