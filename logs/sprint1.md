@@ -13,3 +13,7 @@
 |      🟢 outras                      |   Trello: cronograma de tarefas com link para o GitHub                 |    💚 Concluido               | 3️⃣ |
 
 ![](sprint1_burndown.jpg)
+
+Sprint Review:
+
+Nessa primiera Sprint o grupo se sentiu muito perdido e desorganizado, tanto que foi necessario a intervenção do professor para podermos realizar uma grande mudança organizacional, essa falta de desorganização impactou em nossa produditivada e desenvolvimento, visto que pouco nessa primeira sprint foi desenvolvida. Para a proxima o grupo pretende se reorganizar a fim de melhor seu desempenho e produtividade.
