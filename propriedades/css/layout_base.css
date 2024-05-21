@@ -196,7 +196,9 @@ aside {
   color: black;
   height: 80%;
   width: 80%;
-  overflow: scroll;
+}
+#conteudomenu a {
+  padding: 2px;
 }
 #conteudomenu > a:hover {
   color: #5d84a1;
@@ -211,34 +213,38 @@ aside {
 /* PAGINAS */
 .titulo {
   /* text-decoration: underline; */
-  font-weight: 400;
+  font-weight: bolder;
   text-align: center;
-  padding: 35px;
+  padding: 30px;
   padding-bottom: 20px;
 }
 
-.sumario > li {
-  padding: 40px;
+.sumario li {
+  padding: 10px;
+  text-align: center;
 }
 .sumario a {
   font-size: x-large;
   font-weight: 400;
+  text-decoration: none;
+}
+
+.sumario a:hover {
   text-decoration: underline;
+  color: cornflowerblue;
 }
 
 .conteudo {
-  padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
   text-align: justify;
   font-size: large;
-  font-size: larger;
   word-break: keep-all;
 }
 .conteudo h1,
 h2,
 .lista-ordenada {
-  padding-top: 20px;
+  padding-top: 30px;
   text-align: center;
 }
 .conteudo p {
@@ -246,13 +252,11 @@ h2,
 }
 
 .lista-ordenada {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style-type: decimal;
-  margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 40px;
 }
 
 .voltar_pagina {

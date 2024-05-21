@@ -1,77 +1,90 @@
 <html lang="pt-BR">
-<head>
-    <link href="../../propriedades/css/layout_base.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="../../propriedades/images/favicon.ico" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      href="../../propriedades/css/layout_base.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../propriedades/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sumário</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <button id="openmenu">&#9776;</button>
-        <a href="../profile.html" id="logo">
-            <img id="logoimg" 
-            src="../../propriedades/images/logo_syst.png">
+      <button id="openmenu">&#9776;</button>
+      <a href="../profile.html" id="logo">
+        <img id="logoimg" src="../../propriedades/images/logo_syst.png" />
+      </a>
+      <nav id="menu">
+        <button id="closemenu">X</button>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="https://www.cps.sp.gov.br/" target="_blank">
+          <img src="../../miscelaneo/cps_logo.jpg" style="height: 40px" />
         </a>
-        <nav id="menu">
-            <button id="closemenu">X</button>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="https://www.cps.sp.gov.br/" target="_blank">
-            <img  src="../../miscelaneo/cps_logo.jpg" style="height: 40px;"/>
-            </a>
-            <a href="http://www.fatecjacarei.com.br/" target="_blank">
-            <img src="../../miscelaneo/fatec_logo.png" style="height: 40px;"/>
-            </a>
-    
-        </nav>
+        <a href="http://www.fatecjacarei.com.br/" target="_blank">
+          <img src="../../miscelaneo/fatec_logo.png" style="height: 40px" />
+        </a>
+      </nav>
     </header>
 
     <main>
-        <h1 class="titulo">Neste curso você verá:</h1>
-        <ul class="sumario">
-          <li>
-              <a href="Pagina1.html">O que é Scrum?</a>
-          </li>
-          
-          <li>
-              <a href="pagina2.html">Origem do Scrum</a>
-              <!-- https://agilemanifesto.org/authors.html favor, adicionar esta página ao conteúdo "Origem do Scrum".
-                  Cairá na prova -->
-          </li>
-      
-      
-          <li><a href="./pagina3.html">Pilares do Scrum</a></li>
-          
-          <li><a href="./pagina4.html">Valores do Scrum</a></li>
-          
-          <li><a href="./Pagina5.html">Product Owner P.O. (Dono do Produto)</a></li>
-          
-          <li><a href="./pagina6.html">Scrum Master</a></li>
-          
-          <li><a href="./Pagina7.html">Equipe de Desenvolvimento</a></li>
-          
-          <li><a href="./Pagina8.html">Product Backlog</a></li>
-          
-          <li><a href="./pagina9.html">Sprint Planning (Planejamento da Sprint)</a></li>
-          
-          <li><a href="./Pagina10.html">Scrum Aplicado em Negócios</a></li>
-          
-        </ul>
-      </main>
+      <h1 class="titulo">Sumário</h1>
+      <ol class="sumario">
+        <li><a href="Pagina1.html">O que é Scrum?</a></li>
 
-      <aside>
-        <a href="https://github.com/frevisto/hardstop" target="_blank" id="hslogo">
-            <img id="logohardstop" src="../../propriedades/images/LOGO-HS-GROUP.png">
-        </a>
+        <li>
+          <a href="pagina2.html">Origem do Scrum</a>
+          <!-- https://agilemanifesto.org/authors.html favor, adicionar esta página ao conteúdo "Origem do Scrum".
+                  Cairá na prova -->
+        </li>
+
+        <li><a href="./pagina3.html">Pilares do Scrum</a></li>
+
+        <li><a href="./pagina4.html">Valores do Scrum</a></li>
+
+        <li>
+          <a href="./Pagina5.html">Product Owner P.O. (Dono do Produto)</a>
+        </li>
+
+        <li><a href="./pagina6.html">Scrum Master</a></li>
+
+        <li><a href="./Pagina7.html">Equipe de Desenvolvimento</a></li>
+
+        <li><a href="./Pagina8.html">Product Backlog</a></li>
+
+        <li>
+          <a href="./pagina9.html">Sprint Planning (Planejamento da Sprint)</a>
+        </li>
+
+        <li><a href="./Pagina10.html">Scrum Aplicado em Negócios</a></li>
+      </ol>
+    </main>
+
+    <aside>
+      <a
+        href="https://github.com/frevisto/hardstop"
+        target="_blank"
+        id="hslogo"
+      >
+        <img
+          id="logohardstop"
+          src="../../propriedades/images/LOGO-HS-GROUP.png"
+        />
+      </a>
     </aside>
     <script type="text/javascript">
-        openmenu.addEventListener('click',() =>{
-        menu.style.display="flex"
-        })
-        closemenu.addEventListener('click',() =>{
-            menu.removeAttribute('style')
-        })
+      openmenu.addEventListener("click", () => {
+        menu.style.display = "flex";
+      });
+      closemenu.addEventListener("click", () => {
+        menu.removeAttribute("style");
+      });
     </script>
-</body>
+  </body>
 </html>

@@ -1,89 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <link
-  href="../../propriedades/css/layout_base.css"
-  rel="stylesheet"
-  type="text/css"
-  />
-<link rel="shortcut icon" href="../../propriedades/css/layout_base.css" type="image/x-icon">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />        
+  <head>
+    <link
+      href="../../propriedades/css/layout_base.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../propriedades/css/layout_base.css"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capítulo 9: Sprint Planning</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <button id="openmenu">&#9776;</button>
-        <a href="../profile.html" id="logo"
-          ><img
-            id="logoimg"
-            src="../../propriedades/images/logo_syst.png"
-        /></a>
-        <nav id="menu">
-          <button id="closemenu">X</button>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="https://www.cps.sp.gov.br/" target="_blank">
-            <img  src="../../miscelaneo/cps_logo.jpg" style="height: 40px;"/>
-          </a>
-          <a href="http://www.fatecjacarei.com.br/" target="_blank">
-            <img src="../../miscelaneo/fatec_logo.png" style="height: 40px;"/>
-          </a>
-        </nav>
-      </header>
-     <main>
-        <br>
-    <h1>Capítulo 9: Sprint Planning (Planejamento da Sprint)</h1>
-        <br>
-        <div class="conteudo">
-        <p>O Sprint Planning é uma reunião realizada no início de cada Sprint no framework Scrum. O objetivo desta reunião é definir o 
-            trabalho a ser realizado durante a Sprint e estabelecer um plano para alcançar os objetivos do Sprint. Aqui estão os principais aspectos do Sprint Planning.</p>
-        <br>
-        <p id="destaque">Parte 1: Definição do Objetivo da Sprint</p>
-        <p>Seleção de Itens do Backlog: O Product Owner apresenta os itens do 
-            Product Backlog que são priorizados para a Sprint. Estes são discutidos pela equipe para garantir que todos entendam o que será trabalhado.</p>
-        <br>
-        <p>Definição do Objetivo da Sprint: Com base nos itens do 
-            backlog selecionados, a equipe define um objetivo claro para a Sprint. Este objetivo deve ser específico, mensurável e alcançável.</p>
-        <br>
-        <p id="destaque">Parte 2: Planejamento do Trabalho</p>
-        <br>
-        <p>Discussão e Desenvolvimento de Tarefas: A equipe de desenvolvimento discute os itens do backlog selecionados e divide-os em tarefas menores e 
-            mais detalhadas. Isso pode incluir a elaboração de histórias de usuário, a identificação de dependências e a estimativa do esforço necessário para completar 
-            cada tarefa.</p>
-        <br>
-        <p>Estimativa de Esforço: A equipe estima o esforço necessário para completar cada tarefa, usando técnicas como Planning Poker ou 
-            estimativas de horas ideais.</p>
-        <br>
-        <p>Compromisso da Equipe: Com base nas estimativas de esforço e na 
-            capacidade da equipe, a equipe faz um compromisso de quais itens do backlog podem ser realizados durante a Sprint.</p>
-        <br>
-        <p id="destaque">Resultado do Sprint Planning</p>
-        <br>
-        <p>Sprint Backlog: O resultado do Sprint Planning é um Sprint Backlog, que é uma lista de todas as tarefas necessárias
-             para alcançar o objetivo da Sprint. Esta lista é de propriedade da equipe de desenvolvimento e é usada como um guia durante a Sprint.</p>
-        <br>
-        <p>Plano da Sprint: Além do Sprint Backlog, o Sprint Planning também resulta em um plano geral para a Sprint, 
-            incluindo datas de início e término, eventos planejados e quaisquer outras informações relevantes.</p>
-        </div>
-        <br><br>
-        <a href="./Pagina10.html"><button class="avancar_pagina">Próximo capítulo</button></a>
-        <a href="./Pagina8.html"><button class="voltar_pagina">Capítulo anterior</button></a>
-    </main>
-        <aside>
-          <a href="https://github.com/frevisto/hardstop" target="_blank" id="hslogo">
-            <img id="logohardstop" src="../../propriedades/images/LOGO-HS-GROUP.png"/>
-          </a>
-        </aside>
-        <script type="text/javascript">
-          openmenu.addEventListener("click", () => {
-            menu.style.display = "flex";
-          });
-          closemenu.addEventListener("click", () => {
-            menu.removeAttribute("style");
-          });
-        </script>
-      
-  </body>
-  </html>
+      <button id="openmenu">&#9776;</button>
+      <a href="../profile.html" id="logo"
+        ><img id="logoimg" src="../../propriedades/images/logo_syst.png"
+      /></a>
+      <nav id="menu">
+        <button id="closemenu">X</button>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="https://www.cps.sp.gov.br/" target="_blank">
+          <img src="../../miscelaneo/cps_logo.jpg" style="height: 40px" />
+        </a>
+        <a href="http://www.fatecjacarei.com.br/" target="_blank">
+          <img src="../../miscelaneo/fatec_logo.png" style="height: 40px" />
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div class="conteudo">
+        <h1>Capítulo 9: Sprint Planning (Planejamento da Sprint)</h1>
+        <p>
+          O Sprint Planning é uma reunião realizada no início de cada Sprint no
+          framework Scrum. O objetivo desta reunião é definir o trabalho a ser
+          realizado durante a Sprint e estabelecer um plano para alcançar os
+          objetivos do Sprint. Aqui estão os principais aspectos do Sprint
+          Planning.
+        </p>
 
+        <h2>Parte 1: Definição do Objetivo da Sprint</h2>
+        <p>
+          <strong>Seleção de Itens do Backlog:</strong> O Product Owner
+          apresenta os itens do Product Backlog que são priorizados para a
+          Sprint. Estes são discutidos pela equipe para garantir que todos
+          entendam o que será trabalhado.
+        </p>
+
+        <p>
+          <strong>Definição do Objetivo da Sprint:</strong> Com base nos itens
+          do backlog selecionados, a equipe define um objetivo claro para a
+          Sprint. Este objetivo deve ser específico, mensurável e alcançável.
+        </p>
+
+        <h2>Parte 2: Planejamento do Trabalho</h2>
+
+        <p>
+          <strong>Discussão e Desenvolvimento de Tarefas:</strong> A equipe de
+          desenvolvimento discute os itens do backlog selecionados e divide-os
+          em tarefas menores e mais detalhadas. Isso pode incluir a elaboração
+          de histórias de usuário, a identificação de dependências e a
+          estimativa do esforço necessário para completar cada tarefa.
+        </p>
+
+        <p>
+          <strong>Estimativa de Esforço:</strong> A equipe estima o esforço
+          necessário para completar cada tarefa, usando técnicas como Planning
+          Poker ou estimativas de horas ideais.
+        </p>
+
+        <p>
+          <strong>Compromisso da Equipe:</strong> Com base nas estimativas de
+          esforço e na capacidade da equipe, a equipe faz um compromisso de
+          quais itens do backlog podem ser realizados durante a Sprint.
+        </p>
+
+        <h2>Resultado do Sprint Planning</h2>
+
+        <p>
+          <strong>Sprint Backlog:</strong> O resultado do Sprint Planning é um
+          Sprint Backlog, que é uma lista de todas as tarefas necessárias para
+          alcançar o objetivo da Sprint. Esta lista é de propriedade da equipe
+          de desenvolvimento e é usada como um guia durante a Sprint.
+        </p>
+
+        <p>
+          <strong>Plano da Sprint:</strong> Além do Sprint Backlog, o Sprint
+          Planning também resulta em um plano geral para a Sprint, incluindo
+          datas de início e término, eventos planejados e quaisquer outras
+          informações relevantes.
+        </p>
+      </div>
+      <br /><br />
+      <a href="./Pagina10.html"
+        ><button class="avancar_pagina">Próximo capítulo</button></a
+      >
+      <a href="./Pagina8.html"
+        ><button class="voltar_pagina">Capítulo anterior</button></a
+      >
+    </main>
+    <aside>
+      <a
+        href="https://github.com/frevisto/hardstop"
+        target="_blank"
+        id="hslogo"
+      >
+        <img
+          id="logohardstop"
+          src="../../propriedades/images/LOGO-HS-GROUP.png"
+        />
+      </a>
+    </aside>
+    <script type="text/javascript">
+      openmenu.addEventListener("click", () => {
+        menu.style.display = "flex";
+      });
+      closemenu.addEventListener("click", () => {
+        menu.removeAttribute("style");
+      });
+    </script>
+  </body>
+</html>

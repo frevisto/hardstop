@@ -1,92 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  
   <head>
-    <link href="../propriedades/css/layout_base.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../propriedades/css/layout_base.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="../js/geral.js"></script>
     <script src="../js/dados.js"></script>
-    <link rel="shortcut icon" href="../propriedades/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../propriedades/images/favicon.ico"
+      type="image/x-icon"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
   </head>
-  
+
   <body onload="chamarNome();chamarEmail();relogio()">
     <header>
       <button id="openmenu">&#9776;</button>
-      
-      <a href="./profile.html" id="logo"><img id="logoimg"
-        src="../propriedades/images/logo_syst.png" /></a>
-        
-        <nav id="menu">
-          <button id="closemenu">X</button>
-          <a href="#"></a>
-          <a href="#"></a>
-          
-          <a href="https://www.cps.sp.gov.br/" target="_blank">
-            <img src="../miscelaneo/cps_logo.jpg" style="height: 40px" />
-          </a>
-          
-          <a href="http://www.fatecjacarei.com.br/" target="_blank">
-            <img src="../miscelaneo/fatec_logo.png" style="height: 40px" />
-          </a>
-        </nav>
-      </header>
-      <main id="mainprfl">
-        
-        <div id="prfl">
-          <img style="height: 150px; padding-top: 12px;" src="../miscelaneo/pfp_default.png">
-          <div>
-            <div id="var_nome"></div>
-            <div id="fmu"></div>
-          </div>
-          
-        </div>
-        <button id="btsmr">
-          <a href="./conteudo/apresentacao.html">CURSAR!</a>
-        </button>
-        <button id="btsmv" onclick="logout()"
-            >LOGOUT
-        </button>
 
-        <div id="relogio" style="height: fit-content;width: fit-content;">
-          
+      <a href="./profile.html" id="logo"
+        ><img id="logoimg" src="../propriedades/images/logo_syst.png"
+      /></a>
+
+      <nav id="menu">
+        <button id="closemenu">X</button>
+        <a href="#"></a>
+        <a href="#"></a>
+
+        <a href="https://www.cps.sp.gov.br/" target="_blank">
+          <img src="../miscelaneo/cps_logo.jpg" style="height: 40px" />
+        </a>
+
+        <a href="http://www.fatecjacarei.com.br/" target="_blank">
+          <img src="../miscelaneo/fatec_logo.png" style="height: 40px" />
+        </a>
+      </nav>
+    </header>
+    <main id="mainprfl">
+      <div id="prfl">
+        <img
+          style="height: 150px; padding-top: 12px"
+          src="../miscelaneo/pfp_default.png"
+        />
+        <div>
+          <div id="var_nome"></div>
+          <div id="fmu"></div>
         </div>
-        
-      </main>
-      <aside>
-        <div class="menudlinks">
-          <h4 >&#x1F4CB;MENU</h4>
-          <div id="conteudomenu">
-            <a href="conteudo/apresentacao.html" target="_blank">Apresentação</a>
-            <a href="conteudo/Pagina1.html" target="_blank">capítulo 01</a>
-            <a href="conteudo/Pagina2.html" target="_blank">capítulo 02</a>
-            <a href="conteudo/Pagina3.html" target="_blank">capítulo 03</a>
-            <a href="conteudo/Pagina4.html" target="_blank">capítulo 04</a>
-            <a href="conteudo/Pagina5.html" target="_blank">capítulo 05</a>
-            <a href="conteudo/Pagina6.html" target="_blank">capítulo 06</a>
-            <a href="conteudo/Pagina7.html" target="_blank">capítulo 07</a>
-            <a href="conteudo/Pagina8.html" target="_blank">capítulo 08</a>
-            <a href="conteudo/Pagina9.html" target="_blank">capítulo 09</a>
-            <a href="conteudo/Pagina10.html" target="_blank">capítulo 10</a>
-            <a href="conteudo/questionario.html">Prova</a>
-          </div>
-        </div>
-        <div id="hslogo">
-          <a href="https://github.com/frevisto/hardstop" target="_blank">
-            <img id="logohardstop" src="../propriedades/images/LOGO-HS-GROUP.png" />
-          </a>
-        </div>
-      </aside>
-      <script type="text/javascript">
-        openmenu.addEventListener("click", () => {
-          menu.style.display = "flex";
-        });
-        closemenu.addEventListener("click", () => {
-          menu.removeAttribute("style");
-        });
-        </script>
+      </div>
+      <button id="btsmr">
+        <a href="./conteudo/apresentacao.html">CURSAR!</a>
+      </button>
+      <button id="btsmv" onclick="logout()">LOGOUT</button>
+
+      <div id="relogio" style="height: fit-content; width: fit-content">
         <script src="../js/relogio.js"></script>
-</body>
-
+      </div>
+    </main>
+    <aside>
+      <div class="menudlinks">
+        <h4>&#x1F4CB;MENU</h4>
+        <div id="conteudomenu">
+          <a href="conteudo/apresentacao.html" target="_blank">Apresentação</a>
+          <a href="conteudo/Pagina1.html" target="_blank">Capítulo 1</a>
+          <a href="conteudo/Pagina2.html" target="_blank">Capítulo 2</a>
+          <a href="conteudo/Pagina3.html" target="_blank">Capítulo 3</a>
+          <a href="conteudo/Pagina4.html" target="_blank">Capítulo 4</a>
+          <a href="conteudo/Pagina5.html" target="_blank">Capítulo 5</a>
+          <a href="conteudo/Pagina6.html" target="_blank">Capítulo 6</a>
+          <a href="conteudo/Pagina7.html" target="_blank">Capítulo 7</a>
+          <a href="conteudo/Pagina8.html" target="_blank">Capítulo 8</a>
+          <a href="conteudo/Pagina9.html" target="_blank">Capítulo 9</a>
+          <a href="conteudo/Pagina10.html" target="_blank">Capítulo 10</a>
+          <a href="conteudo/questionario.html">Prova</a>
+        </div>
+      </div>
+      <div id="hslogo">
+        <a href="https://github.com/frevisto/hardstop" target="_blank">
+          <img
+            id="logohardstop"
+            src="../propriedades/images/LOGO-HS-GROUP.png"
+          />
+        </a>
+      </div>
+    </aside>
+    <script type="text/javascript">
+      openmenu.addEventListener("click", () => {
+        menu.style.display = "flex";
+      });
+      closemenu.addEventListener("click", () => {
+        menu.removeAttribute("style");
+      });
+    </script>
+  </body>
 </html>
