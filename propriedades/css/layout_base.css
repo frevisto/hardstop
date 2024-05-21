@@ -85,7 +85,7 @@ QUESTIONARIO
   flex-direction: column;
   margin-top: 10px;
 }
-#saida a:hover {
+#saida a {
   text-decoration: underline;
   color: cornflowerblue;
 }
