@@ -85,6 +85,10 @@ QUESTIONARIO
   flex-direction: column;
   margin-top: 10px;
 }
+#saida a:hover {
+  text-decoration: underline;
+  color: cornflowerblue;
+}
 /*
 perfil
 */

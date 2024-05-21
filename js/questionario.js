@@ -4,7 +4,8 @@ function listarQuestao() {
   if (!usuarioLogado) {
     // Esconde o botão de logout
     document.getElementById("botao-logout").style.display = "none";
-    document.getElementById("saida").innerHTML = "<p>O usuário não está logado. Clique para efetuar o <a href='../../index.html'>login</a>.</p>";
+    document.getElementById("saida").innerHTML =
+      "<p>O usuário não está logado. <a href='../../index.html'>Clique para efetuar o login</a>.</p>";
   } else {
     // Configuração da requisição
     const url = `${urlbase}/questao`;
@@ -20,7 +21,7 @@ function listarQuestao() {
       .then((data) => {
         let questoes = "";
         for (i = 0; i < 20; i++) {
-          globalid[i]= JSON.parse(data[i].idperguntas);
+          globalid[i] = JSON.parse(data[i].idperguntas);
           questoes += `<div class='questao'>
             <div class='linha-enunciado'>${data[i].enunciado}</div>
             <div class='linha-alternativa'>
@@ -43,25 +44,25 @@ function listarQuestao() {
   }
 }
 // TESTE
-var resposta=[];
-var recepitac=[];
+var resposta = [];
+var recepitac = [];
 // função para chamar ao enviar
-function salvarResposta(){
-  //var inputs recebendo do documento onde o método querry seleciona o elemento input tipo radio, e retorna uma nodelist. 
+function salvarResposta() {
+  //var inputs recebendo do documento onde o método querry seleciona o elemento input tipo radio, e retorna uma nodelist.
   inputs = document.querySelectorAll('input[type="radio"]:checked');
-  inputs.forEach(function(inputs) {
-    var nome= inputs.name;
-    var valor= inputs.checked ? inputs.value : null;
+  inputs.forEach(function (inputs) {
+    var nome = inputs.name;
+    var valor = inputs.checked ? inputs.value : null;
     resposta.push(valor);
   });
-  if (resposta.length == 20){
-    for(i=0;i<20;i++){
+  if (resposta.length == 20) {
+    for (i = 0; i < 20; i++) {
       recepitac[i] = resposta[i];
     }
     console.log("Vinte Proxima");
-  }else {
+  } else {
     resposta = [];
-    alert('Você deve selecionar todas para continuar.')
-  } 
+    alert("Você deve selecionar todas para continuar.");
+  }
   //window.location.href = "../pages/resultado.html";
 }
