@@ -19,7 +19,7 @@
 
 
 
-<img src=https://github.com/frevisto/hardstop/blob/main/miscelaneo/burndown%202.png>
+![](sprint1_burndown.jpeg)
 
 
 Sprint Review:
