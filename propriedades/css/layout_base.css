@@ -12,10 +12,7 @@ body {
   flex: 1 1 100vw;
   background: linear-gradient(#b4dfff, #b4dfff, #5d84a1);
 }
-header,
-nav,
-aside {
-  background: linear-gradient(#b4dfff);
+header,nav,aside {
   display: flex;
   margin: 3px;
 }
@@ -23,6 +20,7 @@ aside {
 header {
   flex: 1 1 100vw;
   height: 60px;
+  border-bottom: 2px solid #666;
 }
 header #logo {
   display: flex;
@@ -49,6 +47,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   background: #b4dfff;
+
 }
 nav a {
   margin: 2%;
@@ -61,10 +60,10 @@ a {
 }
 main {
   flex: 1 1 850px;
-  height: calc(130vh - 224px);
+  align-items: center;
+  height: auto;
   background: white;
   border-radius: 0 20px 0 0;
-  overflow: scroll;
   font-size: 20;
 }
 /*
@@ -165,7 +164,7 @@ perfil
 }
 /* ASIDE CONFIG*/
 aside {
-  flex: 1 1 100px;
+  flex: 1 1 100vw;
   background: transparent;
   flex-direction: column;
 }
