@@ -20,7 +20,6 @@ header,nav,aside {
 header {
   flex: 1 1 100vw;
   height: 60px;
-  border-bottom: 2px solid #666;
 }
 header #logo {
   display: flex;
@@ -97,7 +96,6 @@ perfil
   height: calc(130vh - 224px);
   background: white;
   border-radius: 15px 20px 0 20px;
-  overflow: scroll;
   font-size: 20;
 }
 #prfl {
@@ -181,7 +179,6 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
   text-align: center;
   background-color: #5d84a1;
   color: white;
