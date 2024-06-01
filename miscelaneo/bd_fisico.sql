@@ -1,7 +1,7 @@
-DROP TABLE IF EXISTS Usuario;
-DROP TABLE IF EXISTS Perguntas;
-DROP TABLE IF EXISTS Prova;
-DROP TABLE IF EXISTS Historico_Provas;
+DROP TABLE IF EXISTS Usuario CASCADE;
+DROP TABLE IF EXISTS Perguntas CASCADE;
+DROP TABLE IF EXISTS Prova CASCADE;
+DROP TABLE IF EXISTS Historico_Provas CASCADE;
 
 CREATE TABLE Usuario (
   idusuario SERIAL PRIMARY KEY,
@@ -17,7 +17,7 @@ CREATE TABLE Perguntas (
 
 CREATE TABLE Prova (
   idProva SERIAL NOT NULL,
-  idUsuario SERIAL NOT NULL,
+  idUsuario INTEGER NOT NULL,
   datahorario TIMESTAMP DEFAULT NOW() NOT NULL,
   nota FLOAT NULL,
   PRIMARY KEY(idProva),
@@ -28,10 +28,10 @@ CREATE TABLE Prova (
 );
 
 CREATE TABLE Historico_Provas (
-  idProva INTEGER NOT NULL,
   idPerguntas INTEGER NOT NULL,
-  acerto BOOL NOT NULL,
-  PRIMARY KEY(idProva, idPerguntas),
+  idProva INTEGER NOT NULL,
+  resposta BOOL NOT NULL,
+  PRIMARY KEY(idPerguntas,idProva),
   FOREIGN KEY(idPerguntas)
     REFERENCES Perguntas(idPerguntas)
       ON DELETE NO ACTION

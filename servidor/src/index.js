@@ -9,7 +9,7 @@ const { criar, buscar } = require("./controladores/usuario");
 const { listar } = require("./controladores/questao");
 // Importa o pacote dotenv e coloca na variável dotenv
 const dotenv = require("dotenv");
-const { enviarGab } = require("./controladores/nota");
+const { listarQuestionario, salvarQuestionario } = require("./controladores/nota");
 // Carregar as variáveis de ambiente do arquivo .env no objeto process.env do Node
 // O arquivo .env precisa estar na raiz do projeto
 dotenv.config();
@@ -31,13 +31,17 @@ app.listen(PORTA, () => {
 // A rota é mapeada para a função criar
 app.post("/usuario", criar);
 
-app.post("/nota",enviarGab);
-
 // Define a rota /login usando o método HTTP POST
 app.post("/login", buscar);
 
 // Define a rota /usuario usando o método HTTP GET
 app.get("/questao", listar);
+
+// Rota para salvar questionário
+app.post("/nota", salvarQuestionario);
+
+// Rota para resgatar o questionário
+app.get("/nota", listarQuestionario)
 
 app.use(function(req,res){
     res.json({erro:"Rota desconhecida"});

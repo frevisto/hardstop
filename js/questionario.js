@@ -1,4 +1,4 @@
-var globalid = [];
+let globalid = [];
 function listarQuestao() {
   // Verifica se o usuário está logado
   if (!usuarioLogado) {
@@ -21,6 +21,7 @@ function listarQuestao() {
       .then((data) => {
         let questoes = "";
         for (i = 0; i < 20; i++) {
+          //armazena os id gerados...
           globalid[i] = JSON.parse(data[i].idperguntas);
           questoes += `<div class='questao'>
             <div class='linha-enunciado'>${data[i].enunciado}</div>
@@ -43,26 +44,78 @@ function listarQuestao() {
       });
   }
 }
-// TESTE
-var resposta = [];
-var recepitac = [];
+
+// armazena resposta do usuario
+let resposta = [];
+// armazena uma parte da requisição
+let questoes = [];
 // função para chamar ao enviar
 function salvarResposta() {
   //var inputs recebendo do documento onde o método querry seleciona o elemento input tipo radio, e retorna uma nodelist.
+  // input pega as respostas enviadas pelo usuario... ou seja todos os campos do tipo radio...
   inputs = document.querySelectorAll('input[type="radio"]:checked');
+  //for each percorre os itens de um array no caso é o inputs...
   inputs.forEach(function (inputs) {
-    var nome = inputs.name;
+    // se input checado valor vai receber o valor do input caso contrario o valor será nulo...
     var valor = inputs.checked ? inputs.value : null;
     resposta.push(valor);
   });
+  // repetição para definir questoes
+  //verifica se resposta foi totalmente preenchida. 
   if (resposta.length == 20) {
     for (i = 0; i < 20; i++) {
-      recepitac[i] = resposta[i];
+      //define o array questões. Contem um json com os id gerados após envio do user, e a resposta do usuario...
+      questoes[i] = {"idquestao":globalid[i],"resposta":resposta[i] = Boolean(resposta[i] == 'true')};
     }
     console.log("Vinte Proxima");
-  } else {
+    calcularNota();
+  }else {
+    //reseta resposta
     resposta = [];
     alert("Você deve selecionar todas para continuar.");
   }
   //window.location.href = "../pages/resultado.html";
+}
+function calcularNota(){
+  //desestrutura o idusuario de usuarioLogado
+  const {idusuario} = usuarioLogado;
+  // define o json para post
+  const envio = {idusuario,questoes};
+  // define a rota
+  const url = `${urlbase}/nota`;
+  //define o método
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(envio),
+  };
+  fetch(url, options)
+    .then((response) => {
+      if (!response.ok) {
+        alert("Erro na requisição");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      if (data.idusuario) {
+        salvarRetorno(data);
+        if(notaSalva.nota >=70){
+          window.location.href = "./feedback.html";
+        }else{
+          console.log("nota baixa");
+        }
+      }
+      else{
+        alert(data.erro);
+      }
+    })
+    .catch((error) => {
+      console.error("Erro:", error);
+    });
+}
+function salvarRetorno(objeto) {
+  // JSON.stringify() é usado para converter de objeto JS em string JSON
+  localStorage.setItem("notaSalva", JSON.stringify(objeto));
 }
