@@ -176,6 +176,7 @@ aside {
 }
 .menudlinks {
   margin-top: 80px;
+  margin-left: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -183,7 +184,7 @@ aside {
   background-color: #5d84a1;
   color: white;
   height: 35%;
-  width: 60%;
+  width: 20%;
   font-weight: bold;
   border-radius: 15px;
 }
@@ -196,7 +197,7 @@ aside {
   text-align: center;
   color: black;
   height: 80%;
-  width: 80%;
+  width: 65%;
 }
 #conteudomenu a {
   padding: 2px;
