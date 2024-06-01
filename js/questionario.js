@@ -99,16 +99,15 @@ function calcularNota(){
       return response.json();
     })
     .then((data) => {
-      if (data.idusuario) {
+      if (data.nota) {
         salvarRetorno(data);
-        if(notaSalva.nota >=70){
-          window.location.href = "./feedback.html";
-        }else{
-          console.log("nota baixa");
+        if(data.nota >=70){
+          window.location.href = "./resultado.html";
         }
       }
       else{
         alert(data.erro);
+        window.location.href = "./feedback.html";
       }
     })
     .catch((error) => {

@@ -104,12 +104,12 @@ async function salvarQuestionario(req, res) {
               [idquestionario, questoes[i].idquestao, questoes[i].resposta]
             );
           }
-          return res.json(respostaQuestionario.rows[0]);
+          return res.json({nota: respostaQuestionario.rows[0].nota});
         } else {
           return res.json({ erro: "Problemas ao salvar o questionário. Tente novamente" });
         }
       } else {
-        return res.json({ erro: `Você obteve nota ${nota}. Tente novamente.`});
+        return res.json({ erro: `Você obteve nota ${nota}. Você deve revisar o conteúdo e tentar novamente.`});
       }
     }
   }
