@@ -63,8 +63,17 @@ main {
   background: white;
   border-radius: 20px;
   margin-bottom: 200px;
+  margin: 0 100px 0 100px;
 
 }
+#relogio{
+  font-size: large;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 300;
+  font-style: oblique;
+  
+}
+
 /*
 QUESTIONARIO
 */
@@ -91,21 +100,28 @@ QUESTIONARIO
 perfil
 */
 #mainprfl {
-  flex: 1 1 850px;
+  /* flex: 1 1 850px;
   display: flex;
   height: calc(130vh - 224px);
   background: white;
   border-radius: 15px 20px 0 20px;
-  font-size: 20;
+  font-size: 20; */
+  flex: 1 1 850px;
+  height: auto;
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 200px;
+  margin: 0 100px 0 100px;
 }
 #prfl {
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  width: 100%;
   display: flex;
   flex: 0.25;
   background-color: #5d84a1;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
 }
 #prfl > * {
   margin: 10px;
@@ -175,8 +191,8 @@ aside {
   justify-content: center;
 }
 .menudlinks {
-  margin-top: 80px;
-  margin-left: 800px;
+  position: relative;
+  left: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,6 +203,7 @@ aside {
   width: 20%;
   font-weight: bold;
   border-radius: 15px;
+
 }
 
 #conteudomenu {
@@ -198,6 +215,7 @@ aside {
   color: black;
   height: 80%;
   width: 65%;
+  overflow-y: scroll;
 }
 #conteudomenu a {
   padding: 2px;
@@ -327,7 +345,8 @@ h2,
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self: center;
+  position: relative;
+  left: 30%;
   width: 130px;
   height: 50px;
   font-size: large;
@@ -343,7 +362,7 @@ h2,
 /* REGRA MEDIA PARA MUDANÇA DE TELA */
 @media only screen and (max-width: 923px) {
   main {
-    height: calc(100vh- 330px);
+    margin: 0;
   }
   aside {
     flex: 1 1 200px;
@@ -356,15 +375,17 @@ h2,
   .buttonal {
     flex: auto;
   }
-  #prfl > * {
-    margin: 10px;
-  }
   .menudlinks {
-    height: 70%;
+    height: 40%;
+    width: 45%;
   }
   #hslogo {
     padding-top: 20px;
   }
+  #mainprfl{
+    margin: 0;
+  }
+
 }
 @media only screen and (max-width: 717px) {
   a#logo {
@@ -402,6 +423,7 @@ h2,
   }
   main {
     border-radius: 20px;
+
   }
   .laabel {
     text-align: center;
@@ -417,7 +439,6 @@ h2,
     width: 55%;
   }
   #prfl {
-    width: fit-content;
     display: flex;
     align-items: flex-start;
     /* justify-content: center; */
