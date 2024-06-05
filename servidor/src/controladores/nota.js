@@ -26,6 +26,7 @@ async function listarQuestionario(req, res) {
             AND a.idPerguntas = b.idPerguntas`,
         [questionario.idquestionario]
       );
+      console.log(questoes)
       return res.json({ questionario, questoes: resposta.rows });
     } else {
       return res.json({
