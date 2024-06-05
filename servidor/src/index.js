@@ -41,7 +41,7 @@ app.get("/questao", listar);
 app.post("/nota", salvarQuestionario);
 
 // Rota para resgatar o questionário
-app.get("/nota", listarQuestionario)
+app.post("/listar", listarQuestionario)
 
 app.use(function(req,res){
     res.json({erro:"Rota desconhecida"});

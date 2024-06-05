@@ -14,19 +14,16 @@ async function listarQuestionario(req, res) {
       WHERE idusuario = $1`,
       [idusuario]
     );
-
     if (resposta.rowCount > 0) {
       const questionario = resposta.rows[0];
-
       // retorna as questões aleatórias
       resposta = await pool.query(
         `SELECT b.enunciado, a.resposta as "respondido", b.resposta as "correto" 
         FROM Historico_Provas as a, Perguntas as b
         WHERE a.idProva = $1
             AND a.idPerguntas = b.idPerguntas`,
-        [questionario.idquestionario]
+        [questionario.idprova]
       );
-      console.log(questoes)
       return res.json({ questionario, questoes: resposta.rows });
     } else {
       return res.json({

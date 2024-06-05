@@ -20,6 +20,7 @@ function login() {
 function logout() {
   // Remover a propriedade `usuario` do localStorage
   localStorage.removeItem("usuario");
+  localStorage.removeItem("dados")
   clearInterval(relogiorodando);
   // Redireciona para a página de login
   window.location.href = "../index.html";
