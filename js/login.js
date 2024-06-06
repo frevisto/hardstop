@@ -27,10 +27,7 @@ function logar() {
       })
       .then((data) => {
         if (data.idusuario) {
-          x = data.idusuario
-          manterDadosDaProva(x);
           salvarLogin(data);
-
           window.location.href = "./pages/profile.html";
         }
         else{
@@ -49,36 +46,39 @@ function salvarLogin(objeto) {
   localStorage.setItem("usuario", JSON.stringify(objeto));
 }
 
-//salva status da prova se tiver prova feita...
-function manterDadosDaProva(y){
-  // Configuração da requisição
-  dados = {"idusuario":y}
-  const urll = `${urlbase}/listar`
-  const options = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(dados),
-  };  
-  // Submete a requisição
-  fetch(urll, options)
-  .then((response) => {
-    if (!response.ok) {
-      alert("Erro na requisição");
-    }
-    return response.json();
-  })
-  .then((data) => {
-    console.log(data)
-    if (data.questionario) {
-      salvarResposta(data);
-    }
-  })
-}
+// //salva status da prova se tiver prova feita...
+// function manterDadosDaProva(y){
+//   // Configuração da requisição
+//   dados = {"idusuario":y}
+//   const urll = `${urlbase}/listar`
+//   const options = {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(dados),
+//   };  
+//   // Submete a requisição
+//   fetch(urll, options)
+//   .then((response) => {
+//     if (!response.ok) {
+//       alert("Erro na requisição");
+//     }
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log(data)
+//     if (data.questionario) {
+//       salvarResposta(data);
+//     }else{
+//       alert("erro")
+//     }
+//   })
+// }
 
 
-function salvarResposta(objeto) {
-  // JSON.stringify() é usado para converter de objeto JS em string JSON
-  localStorage.setItem("dados", JSON.stringify(objeto));
-}
+// function salvarResposta(objeto) {
+//   // JSON.stringify() é usado para converter de objeto JS em string JSON
+//   localStorage.setItem("dados", JSON.stringify(objeto));
+//   console.log("certo")
+// }

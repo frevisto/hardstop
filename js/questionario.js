@@ -116,7 +116,8 @@ function calcularNota(){
       return response.json();
     })
     .then((data) => {
-      if (data) {
+      console.log(data)
+      if (data.questionario) {
         salvarRetorno(data);
         if(data.questionario){
           window.location.href = "./resultado.html";
