@@ -1,3 +1,10 @@
+/* Proposta para layout finalizado, anterior a testes aprofundados e alterações em botões e composição perfil */
+
+/* Medidas para o media query nesse caso usei polegadas porque telas são medidas em polegadas
+muito embora sejam medidas na diagonal; Fato é, evitar px como unidade para a media query pq
+dispositivos podem ter diferentes resoluções, mas centimetros e polegadas sempre serão os mesmos */
+
+/* GERAL */
 /* GERAL */
 * {
   font-family: sans-serif;
