@@ -3,6 +3,13 @@ const urlbase = "http://localhost:3030";
 // A função carregarLogin verifica se o usuário está logado e carrega na variável usuarioLogado
 let usuarioLogado = undefined;
 
+openmenu.addEventListener("click", () => {
+  menu.style.display = "flex";
+});
+closemenu.addEventListener("click", () => {
+  menu.removeAttribute("style");
+});
+
 // Recuperar os dados de login que estão no localStorage do navegador
 function carregarLogin() {
   // os dados estão na propriedade usuario do localStorage
