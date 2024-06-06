@@ -1,4 +1,6 @@
 let globalid = [];
+dados = JSON.parse(localStorage.getItem("dados"));
+
 function listarQuestao() {
   // Verifica se o usuário está logado
   if (!usuarioLogado) {
@@ -6,7 +8,12 @@ function listarQuestao() {
     document.getElementById("botao-logout").style.display = "none";
     document.getElementById("saida").innerHTML =
       "<p>O usuário não está logado. <a href='../../index.html'>Clique para efetuar o login</a>.</p>";
-  } else {
+  }if(dados) {
+    document.getElementById("saida").innerHTML = `
+            <h4>Você já foi aprovado com a nota ${dados.questionario.nota} no questionário realizado em ${dados.questionario.datahorario}.</h4>
+            <a href="./resultado.html">Ver o seu questionário</a>
+          `;
+  }else{
     // Configuração da requisição
     const url = `${urlbase}/questao`;
 
@@ -37,7 +44,10 @@ function listarQuestao() {
             </div>
           </div>`;
         }
+        enviar = `<button id="but_dados" onclick="salvarResposta()">Enviar</button>`
         document.getElementById("saida").innerHTML = questoes;
+        document.getElementById("budiv").innerHTML = enviar;
+        
       })
       .catch((error) => {
         console.error("Erro:", error);
@@ -51,30 +61,36 @@ let resposta = [];
 let questoes = [];
 // função para chamar ao enviar
 function salvarResposta() {
-  //var inputs recebendo do documento onde o método querry seleciona o elemento input tipo radio, e retorna uma nodelist.
-  // input pega as respostas enviadas pelo usuario... ou seja todos os campos do tipo radio...
-  inputs = document.querySelectorAll('input[type="radio"]:checked');
-  //for each percorre os itens de um array no caso é o inputs...
-  inputs.forEach(function (inputs) {
-    // se input checado valor vai receber o valor do input caso contrario o valor será nulo...
-    var valor = inputs.checked ? inputs.value : null;
-    resposta.push(valor);
-  });
-  // repetição para definir questoes
-  //verifica se resposta foi totalmente preenchida. 
-  if (resposta.length == 20) {
-    for (i = 0; i < 20; i++) {
-      //define o array questões. Contem um json com os id gerados após envio do user, e a resposta do usuario...
-      questoes[i] = {"idquestao":globalid[i],"resposta":resposta[i] = Boolean(resposta[i] == 'true')};
+  let usuario = localStorage.getItem("usuario");
+  if(usuario){
+    //var inputs recebendo do documento onde o método querry seleciona o elemento input tipo radio, e retorna uma nodelist.
+    // input pega as respostas enviadas pelo usuario... ou seja todos os campos do tipo radio...
+    inputs = document.querySelectorAll('input[type="radio"]:checked');
+    //for each percorre os itens de um array no caso é o inputs...
+    inputs.forEach(function (inputs) {
+      // se input checado valor vai receber o valor do input caso contrario o valor será nulo...
+      var valor = inputs.checked ? inputs.value : null;
+      resposta.push(valor);
+    });
+    // repetição para definir questoes
+    //verifica se resposta foi totalmente preenchida. 
+    if (resposta.length == 20) {
+      for (i = 0; i < 20; i++) {
+        //define o array questões. Contem um json com os id gerados após envio do user, e a resposta do usuario...
+        questoes[i] = {"idquestao":globalid[i],"resposta":resposta[i] = Boolean(resposta[i] == 'true')};
+      }
+      console.log("Vinte Proxima");
+      calcularNota();
+    }else {
+      //reseta resposta
+      resposta = [];
+      alert("Você deve selecionar todas para continuar.");
     }
-    console.log("Vinte Proxima");
-    calcularNota();
-  }else {
-    //reseta resposta
-    resposta = [];
-    alert("Você deve selecionar todas para continuar.");
+  }else{
+    alert("Você deve efetuar o login para continuar.");
+    window.location.href = "../../index.html"
+
   }
-  //window.location.href = "../pages/resultado.html";
 }
 function calcularNota(){
   //desestrutura o idusuario de usuarioLogado
@@ -100,9 +116,9 @@ function calcularNota(){
       return response.json();
     })
     .then((data) => {
-      if (data.nota) {
+      if (data) {
         salvarRetorno(data);
-        if(data.nota >=70){
+        if(data.questionario){
           window.location.href = "./resultado.html";
         }
       }
@@ -117,5 +133,5 @@ function calcularNota(){
 }
 function salvarRetorno(objeto) {
   // JSON.stringify() é usado para converter de objeto JS em string JSON
-  localStorage.setItem("notaSalva", JSON.stringify(objeto));
+  localStorage.setItem("dados", JSON.stringify(objeto));
 }

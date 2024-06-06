@@ -102,7 +102,7 @@ async function salvarQuestionario(req, res) {
               [idquestionario, questoes[i].idquestao, questoes[i].resposta]
             );
           }
-          return res.json({nota: respostaQuestionario.rows[0].nota});
+          listarQuestionario(req,res);
         } else {
           return res.json({ erro: "Problemas ao salvar o questionário. Tente novamente" });
         }
