@@ -1,13 +1,15 @@
 /* GERAL */
 * {
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
   display: flex;
   flex-wrap: wrap;
   margin: 3px;
-  /* flex: 1 1 100vw; */
+  flex: 1 1 100vw;
   background: linear-gradient(#b4dfff, #b4dfff, #5d84a1);
 }
 header,nav,aside {
@@ -60,6 +62,7 @@ main {
   height: auto;
   background: white;
   border-radius: 20px;
+  margin-bottom: 200px;
   margin: 0 100px 0 100px;
 
 }
@@ -357,14 +360,10 @@ h2,
   color: dimgray;
 }
 /* REGRA MEDIA PARA MUDANÇA DE TELA */
-
-
-@media only screen and (min-width: 8in) {
-
+@media only screen and (max-width: 923px) {
   main {
-    height: 94vh;
+    margin: 0;
   }
-
   aside {
     flex: 1 1 200px;
 
@@ -383,13 +382,12 @@ h2,
   #hslogo {
     padding-top: 20px;
   }
-  /* #mainprfl{
-    /* margin: 0; 
-  }*/
+  #mainprfl{
+    margin: 0;
+  }
+
 }
-
-@media only screen and (max-width: 8in) {
-
+@media only screen and (max-width: 717px) {
   a#logo {
     width: fit-content;
   }
@@ -418,12 +416,12 @@ h2,
     align-items: center;
     justify-content: center;
     display: none;
+    margin: 0;
   }
   nav > a {
     background-color: rgba(255, 255, 255, 0);
   }
   main {
-    height: 70vh;
     border-radius: 20px;
 
   }
