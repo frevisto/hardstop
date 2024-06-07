@@ -350,6 +350,14 @@ h2,
 #btsmr:hover {
   color: dimgray;
 }
+td,th{
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+table{
+  width: 80%;
+}
 #btsmv {
   width: 130px;
   height: 50px;
