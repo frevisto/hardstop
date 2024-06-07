@@ -31,11 +31,14 @@ function manterDadosDaProva(){
 function salvarResposta(objeto) {
   // JSON.stringify() é usado para converter de objeto JS em string JSON
   localStorage.setItem("dados", JSON.stringify(objeto));
+  passou()
   console.log("certo")
 }
 
 function passou(){
-  if (localStorage.getItem(dados)){
-      document.getElementById("cert").setAttribute("display",flex)
+  let loc = localStorage.getItem('dados');
+  let elemento = document.getElementById('cert');
+  if (loc){
+    elemento.style.display = 'flex';
   }
 }

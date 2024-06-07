@@ -1,14 +1,13 @@
 let globalid = [];
 dados = JSON.parse(localStorage.getItem("dados"));
+usuario = localStorage.getItem('usuario');
 
 function listarQuestao() {
   // Verifica se o usuário está logado
-  if (!usuarioLogado) {
+  if(usuario == null) {
     // Esconde o botão de logout
-    document.getElementById("botao-logout").style.display = "none";
-    document.getElementById("saida").innerHTML =
-      "<p>O usuário não está logado. <a href='../../index.html'>Clique para efetuar o login</a>.</p>";
-  }if(dados) {
+    document.getElementById("saida").innerHTML = "<p>O usuário não está logado. <a href='../../index.html'>Clique para efetuar o login</a>.</p>";
+  }else if(dados) {
     document.getElementById("saida").innerHTML = `
             <h4>Você já foi aprovado com a nota ${dados.questionario.nota} no questionário realizado em ${dados.questionario.datahorario}.</h4>
             <a href="./resultado.html">Ver o seu questionário</a>
