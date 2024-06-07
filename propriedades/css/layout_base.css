@@ -69,6 +69,7 @@ main {
 
 }
 #relogio{
+  margin-left: 12.5px;
   font-size: large;
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: 300;
@@ -128,10 +129,23 @@ perfil
   display: flex;
   flex: 0.25;
   background-color:  #49566173;
-  border-radius: 15px 15px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 #prfl > * {
   margin: 10px;
+}
+#prflind {
+  margin:20px;
+  columns: 5;
+}
+#cert {
+  display:none;
+  border-radius: 80px;
+  border: 3px rgba(92, 92, 15, 0.726) solid;
+  background-color: rgba(255, 255, 0, 0.315);
+  width: fit-content;
+  margin:10px;
+  color:rgb(95, 92, 66)
 } 
 #var_nome {
   font-weight: bold;
@@ -355,7 +369,7 @@ h2,
   height: 50px;
   font-size: large;
   border-radius: 20px;
-  background-color: rgba(0, 92, 128, 0.253);
+  background-color: rgba(19, 60, 77, 0.253);
   border-color: aliceblue;
   color: hsl(0, 0%, 100%);
   text-shadow: 0px 4px 4px #666;
@@ -389,6 +403,10 @@ h2,
   #mainprfl{
     margin: 0;
   }
+  #prflind {
+    columns: 1;
+    margin-left: 330px;
+  } 
 
 }
 @media only screen and (max-width: 717px) {
@@ -449,6 +467,22 @@ h2,
   }
   #prfl > * {
     margin: 10px;
+  }
+  #prflind {
+    columns: 2;
+    margin-left: 50px;
+  }
+  #prind {
+    margin-bottom: 20px;
+  }
+  #pril > li {
+    margin: 5px;
+  }
+  #contn {
+    margin-left: 50px;
+  }
+  #btsmv {
+    margin-left: 200px;
   }
 }
 /* LOGIN */

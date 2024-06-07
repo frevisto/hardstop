@@ -33,3 +33,9 @@ function salvarResposta(objeto) {
   localStorage.setItem("dados", JSON.stringify(objeto));
   console.log("certo")
 }
+
+function passou(){
+  if (localStorage.getItem(dados)){
+      document.getElementById("cert").setAttribute("display",flex)
+  }
+}
