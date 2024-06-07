@@ -9,8 +9,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 3px;
+  width: 100vw;
+  height: 100vh;
   flex: 1 1 100vw;
-  background: linear-gradient(#b4dfff, #b4dfff, #5d84a1);
+  background-color: rgb(102, 164, 211);
 }
 header,nav,aside {
   display: flex;
@@ -45,13 +47,13 @@ nav {
   flex: 1 1 73vw;
   align-items: center;
   justify-content: flex-end;
-  background: #b4dfff;
+  background: transparent;
 
 }
 nav a {
   margin: 2%;
   font-size: 20pt;
-  background: #b4dfff;
+  background: transparent;
 }
 a {
   text-decoration: none;
@@ -71,7 +73,12 @@ main {
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: 300;
   font-style: oblique;
-  
+  position: relative;
+  right: 10%;
+}
+#contn{
+  display: flex;
+  flex-direction: row;
 }
 
 /*
@@ -120,12 +127,12 @@ perfil
   width: 100%;
   display: flex;
   flex: 0.25;
-  background-color: #5d84a1;
+  background-color:  #49566173;
   border-radius: 15px 15px 0 0;
 }
 #prfl > * {
   margin: 10px;
-}
+} 
 #var_nome {
   font-weight: bold;
   /* padding-top: 5px; */
@@ -289,6 +296,7 @@ h2,
   border-color: aliceblue;
   color: hsl(0, 0%, 100%);
   text-shadow: 0px 4px 4px #666;
+  margin: 10px;
 }
 .avancar_pagina {
   float: right;
@@ -300,6 +308,7 @@ h2,
   border-color: aliceblue;
   color: hsl(0, 0%, 100%);
   text-shadow: 0px 4px 4px #666;
+  margin: 10px;
 }
 .avancar_pagina:hover {
   color: dimgray;
@@ -342,11 +351,6 @@ h2,
   color: dimgray;
 }
 #btsmv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  left: 30%;
   width: 130px;
   height: 50px;
   font-size: large;
