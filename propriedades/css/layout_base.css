@@ -373,8 +373,9 @@ table{
   width: 80%;
 }
 #btsmv {
-  width: 130px;
-  height: 50px;
+  /* width: 130px;
+  height: 50px; */
+  width: 45px;
   font-size: large;
   border-radius: 20px;
   background-color: rgba(19, 60, 77, 0.253);
