@@ -140,11 +140,12 @@ perfil
 }
 #cert {
   display:none;
-  border-radius: 80px;
-  border: 3px rgba(92, 92, 15, 0.726) solid;
-  background-color: rgba(255, 255, 0, 0.315);
+  border-radius: 60px;
+  border: 7px rgba(0, 128, 0, 0.115) solid;
+  background-color: rgba(0, 128, 0, 0.253);
   width: fit-content;
   margin:10px;
+  font-size: 20px;
   color:rgb(95, 92, 66)
 } 
 #var_nome {
@@ -324,6 +325,9 @@ h2,
   text-shadow: 0px 4px 4px #666;
   margin: 10px;
 }
+ul#pril li:hover {
+  text-decoration: underline;
+}
 .avancar_pagina:hover {
   color: dimgray;
 }
@@ -371,6 +375,7 @@ td,th{
 }
 table{
   width: 80%;
+  padding: 10 10 10 200;
 }
 #btsmv {
   /* width: 130px;
@@ -485,7 +490,7 @@ table{
     margin-bottom: 20px;
   }
   #pril > li {
-    margin: 5px;
+    margin: 10px;
   }
   #contn {
     margin-left: 50px;

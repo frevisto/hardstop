@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <link
-      href="../propriedades/css/layout_base.css"
-      rel="stylesheet"
-      type="text/css"
-    />
     <script src="../js/geral.js"></script>
     <script src="../js/resultado.js"></script>
     <script src="../js/dados.js"></script>
     <link
-      rel="shortcut icon"
-      href="../propriedades/images/favicon.ico"
-      type="image/x-icon"
+    rel="shortcut icon"
+    href="../propriedades/images/favicon.ico"
+    type="image/x-icon"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
   </head>
-
+  
   <body onload="chamarNome();chamarEmail();relogio();manterDadosDaProva();passou()">
     <header>
       <button id="openmenu">&#9776;</button>
-
+      
       <a href="./profile.html" id="logo"
-        ><img id="logoimg" src="../propriedades/images/logo_syst.png"
+      ><img id="logoimg" src="../propriedades/images/logo_syst.png"
       /></a>
-
+      
       <nav id="menu">
         <button id="closemenu">X</button>
         <a href="#"></a>
         <a href="#"></a>
-
+        
         <a href="https://www.cps.sp.gov.br/" target="_blank">
           <img src="../miscelaneo/cps_logo.jpg" style="height: 40px" />
         </a>
-
+        
         <a href="http://www.fatecjacarei.com.br/" target="_blank">
           <img src="../miscelaneo/fatec_logo.png" style="height: 40px" />
         </a>
@@ -45,58 +40,63 @@
         
       
       
-        <div id="prfl">
-          <div id="contn">
-            <div id="relogio" style="height: fit-content; width: fit-content"><script src="../js/relogio.js"></script> </div>
-            <button id="btsmv" onclick="logout()"><img src="../propriedades/images/shut.png" style="height: 20px;"></button>
-          </div>
-          <img
-          style="height: 150px; padding-top: 12px"
-          src="../miscelaneo/pfp_default.png"
-          />
-          <div>
-            <div id="var_nome"></div>
-            <div id="fmu"></div>
+      <div id="prfl">
+        <div id="contn">
+          <div id="relogio" style="height: fit-content; width: fit-content"><script src="../js/relogio.js"></script> </div>
+          <button id="btsmv" onclick="logout()"><img src="../propriedades/images/shut.png" style="height: 20px;"></button>
+        </div>
+        <img
+        style="height: 150px; padding-top: 12px"
+        src="../miscelaneo/pfp_default.png"
+        />
+        <div>
+          <div id="var_nome"></div>
+          <div id="fmu"></div>
         </div>
       </div>
-
-
-    <div id="prflind">
-      <div style="margin-left: 30px;">
-        <h1 id="prind">&#x1F4CB;Índice</h1> 
-        <ul id="pril">
-        <li><a href="./conteudo/apresentacao.html">Apresentação</a></li>
-        <li><a href="./conteudo/pagina1.html">Capítulo 1</a></li>
-        <li><a href="./conteudo/pagina2.html">Capítulo 2</a></li>
-        <li><a href="./conteudo/pagina3.html">Capítulo 3</a></li>
-        <li><a href="./conteudo/pagina4.html">Capítulo 4</a></li>
-        <li><a href="./conteudo/pagina5.html">Capítulo 5</a></li>
-        <li><a href="./conteudo/pagina6.html">Capítulo 6</a></li>
-        <li><a href="./conteudo/pagina7.html">Capítulo 7</a></li>
-        <li><a href="./conteudo/pagina8.html">Capítulo 8</a></li>
-        <li><a href="./conteudo/pagina9.html">Capítulo 9</a></li>
-        <li><a href="./conteudo/pagina10.html">Capítulo 10</a></li>
-        <li><a href="./conteudo/questionario.html">Prova</a></li>
+      
+      
+      <div id="prflind">
+        <div style="margin-left: 30px;">
+          <h1 id="prind">&#x1F4CB;Índice</h1> 
+          <ul id="pril">
+            <li><a href="./conteudo/apresentacao.html">Apresentação</a></li>
+            <li><a href="./conteudo/pagina1.html">Capítulo 1</a></li>
+            <li><a href="./conteudo/pagina2.html">Capítulo 2</a></li>
+            <li><a href="./conteudo/pagina3.html">Capítulo 3</a></li>
+            <li><a href="./conteudo/pagina4.html">Capítulo 4</a></li>
+            <li><a href="./conteudo/pagina5.html">Capítulo 5</a></li>
+            <li><a href="./conteudo/pagina6.html">Capítulo 6</a></li>
+            <li><a href="./conteudo/pagina7.html">Capítulo 7</a></li>
+            <li><a href="./conteudo/pagina8.html">Capítulo 8</a></li>
+            <li><a href="./conteudo/pagina9.html">Capítulo 9</a></li>
+            <li><a href="./conteudo/pagina10.html">Capítulo 10</a></li>
+            <li><a href="./conteudo/questionario.html">Prova</a></li>
         </ul>
       </div>
-
+      
       <div>
-        </div>
-
-        <div id="cert">
-          <a href="./conteudo/resultado.html"><h3>Resultado</h3></a>
-        </div>
-      </div>    
-    </main>
-    <aside>
-      <div id="hslogo">
-        <a href="https://github.com/frevisto/hardstop" target="_blank">
-          <img
-            id="logohardstop"
-            src="../propriedades/images/LOGO-HS-GROUP.png"
-          />
-        </a>
       </div>
-    </aside>
-  </body>
+      
+      <div id="cert">
+        <a href="./conteudo/resultado.html"><h3>Resultado</h3></a>
+      </div>
+    </div>    
+  </main>
+  <aside>
+    <div id="hslogo">
+      <a href="https://github.com/frevisto/hardstop" target="_blank">
+        <img
+        id="logohardstop"
+        src="../propriedades/images/LOGO-HS-GROUP.png"
+        />
+      </a>
+    </div>
+  </aside>
+  <link
+    href="../propriedades/css/layout_base.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+</body>
 </html>
