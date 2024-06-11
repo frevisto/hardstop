@@ -561,3 +561,13 @@ div.cadin > input {
   font-weight: bold;
   text-align: center;
 }
+.alinhamento{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagens{
+  height: 50%;
+  width: 50%;
+}
