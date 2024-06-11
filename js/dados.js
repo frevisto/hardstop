@@ -12,3 +12,15 @@ function chamarEmail(){
     user_email = user_email.replace(/"/g,'');
     document.getElementById("fmu").innerHTML = user_email;
 }
+
+function chamarData(){
+    let dados = localStorage.getItem("dados");
+    let data =  JSON.parse(dados);
+    let cal = data.questionario.datahorario;
+    let oder= " "
+    for (let i = 0; i < 10; i++){
+      oder += cal[i]
+      console.log(oder)
+    }
+    document.getElementById("data").innerHTML = oder;
+}
