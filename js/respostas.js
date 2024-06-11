@@ -4,8 +4,8 @@ function exibirRespostas(){
  for (i = 0; i < dados.questoes.length; i++) {
   questoes += `<tr >
   <td>${dados.questoes[i].enunciado}</td>
-  <td> ${dados.questoes[i].respondido}</td> 
-  <td>${dados.questoes[i].correto}</td>
+  <td> ${dados.questoes[i].respondido == true ? 'Verdadeiro':'Falso'}</td> 
+  <td>${dados.questoes[i].correto == true ? 'Verdadeiro':'Falso'}</td>
 </tr>`;
 }
 

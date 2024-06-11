@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado</title>
+    <link rel="stylesheet" href="../propriedades/css/certificado.css">
+    <script src="../js/geral.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="../js/certipdf.js"></script>
+</head>
+
+<body onload="chamarNome();chamarData();baixar()">
+    <div class="conteudo">
+        <div id="borda">
+            <div id="topo">
+                <h1>
+                    <div class="nro1">Scrum</div>
+                    <div class="nro2">Master</div>
+                </h1>
+            </div>
+            <h2>Certificado</h2>
+            <p><span id="var_nome"></span></p>
+            <div id="linha1">
+                <hr>
+            </div>
+            <div id="texto">
+                <p><strong>Concluiu com sucesso o Curso de Scrum Master com carga Horária de 6 horas.</strong></p>
+            </div>
+            <div id="aula"><strong>Ministradas por Hard Stop.</strong></div>
+            <p id="data">Data:<span id="data"></span></p>
+            <p id="numero"><!--Aqui quando foi concluido--></p>
+            <div id="assinatura"><strong>Equipe Hard Stop</strong></div>
+            <div id="linha2">
+                <hr>
+            </div>
+            <div id="orientacao">
+                <p>Orientação da equipe Hard Stop.</p>
+            </div>
+            <div id="certificacao">
+                <p>Certificado autorizado através da Lei 9.394/16 Decreto 5154/04 Deliberação CEE 14/97
+                    Indicação CEE 14/97.</p>
+            </div>
+            <div id="parecer">
+                <p>Parecer 283/04 se enquadrando na categoria de educação
+                    profissionalizante.</p>
+            </div>
+        </div>
+        <script src="../js/dados.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+.conteudo {
+    width: 297mm;
+    height: 209.1mm;
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:linear-gradient(rgb(1, 135, 224), rgba(17, 25, 27, 0.397),rgb(49, 88, 105));
+    border-bottom: 2px solid;
+}
+
+#borda {
+    height: 100%;
+}
+
+#topo {
+    margin-bottom: -15px;
+}
+
+.nro1,
+.nro2 {
+    font-size: 95px;
+    display: inline-block;
+}
+
+.nro1 {
+    color: darkorange;
+}
+
+.nro2 {
+    color: aliceblue;
+    margin-bottom: -45px;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 30px;
+}
+
+#var_nome {
+    height: 100px;
+    font-family:sans-serif,cursive;
+    font-style: italic;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#texto,
+#aula {
+    font-size: 25px;
+}
+
+#data,
+#numero {
+    display: inline-block;
+    font-size: 30px;
+}
+
+#data {
+    color: rgba(240, 248, 255, 0.76);
+
+}
+
+#numero {
+    color: aliceblue;
+}
+
+#assinatura {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    border-bottom: -25px;
+}
+
+#orientacao {
+    font-size: 20px;
+}
+
+#certificacao {
+
+    color: rgb(29, 31, 31);
+}
+
+#parecer {
+    color: (29, 31, 31);
+}

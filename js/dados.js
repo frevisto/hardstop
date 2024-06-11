@@ -20,10 +20,8 @@ function chamarData(){
     let oder= " "
     for (let i = 0; i < 10; i++){
       oder += cal[i]
-      console.log(oder)
     }
     oder = oder.replace(/[-]/g,'')
-    console.log(oder)
     const ano = oder.substring(1,5)
     const mes = oder.substring(5,7)
     const dia = oder.substring(7,10)
