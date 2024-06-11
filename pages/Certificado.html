@@ -49,8 +49,10 @@
             border-bottom: 30px;
         }
 
-        #concluente {
+        #var_nome {
+            height: 100px;
             font-family:sans-serif,cursive;
+            font-style: italic;
             font-size: 40px;
             margin-bottom: 20px;
         }
@@ -94,12 +96,12 @@
             color: (29, 31, 31);
         }
     </style>
+    <script src="../js/geral.js"></script>
+    <script src="../js/dados.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
-    <script> src = "scripts.js"</script>
 </head>
 
-<body>
+<body onload="chamarNome();chamarData()">
     <div class="conteudo">
         <div id="borda">
             <div id="topo">
@@ -109,16 +111,15 @@
                 </h1>
             </div>
             <h2>Certificado</h2>
-            <p id="concluente"><!--Aqui vai o nome do aluno que atingiu os 70%--></p>
+            <p><span id="var_nome"></span></p>
             <div id="linha1">
                 <hr>
             </div>
             <div id="texto">
-                <p><strong>Concluiu com sucesso o Curso de Scrum
-                        Master com carga Horária de 6 horas.</strong></p>
+                <p><strong>Concluiu com sucesso o Curso de Scrum Master com carga Horária de 6 horas.</strong></p>
             </div>
             <div id="aula"><strong>Ministradas por Hard Stop.</strong></div>
-            <p id="data">Data:</p>
+            <p id="data">Data:<span id="data"></span></p>
             <p id="numero"><!--Aqui quando foi concluido--></p>
             <div id="assinatura"><strong>Equipe Hard Stop</strong></div>
             <div id="linha2">
