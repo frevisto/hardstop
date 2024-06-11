@@ -22,5 +22,13 @@ function chamarData(){
       oder += cal[i]
       console.log(oder)
     }
-    document.getElementById("data").innerHTML = oder;
+    oder = oder.replace(/[-]/g,'')
+    console.log(oder)
+    const ano = oder.substring(1,5)
+    const mes = oder.substring(5,7)
+    const dia = oder.substring(7,10)
+    const diad = `${dia}/${mes}/${ano}`
+
+
+    document.getElementById("data").innerHTML = diad;
 }
