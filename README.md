@@ -66,6 +66,9 @@
 <div align="middle">
   <img src=https://github.com/frevisto/hardstop/blob/main/miscelaneo/burndown%202.png>
 </div>
+<div>
+  <img src=https://github.com/frevisto/hardstop/blob/main/miscelaneo/brundown.jpeg>
+</div>
 
 # ✈️ WIREFRAME
 
