@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resultado</title>
   </head>
-  <body onload="chamarNome()">
+  <body onload="chamarNome();chamarNota()">
     <header>
       <button id="openmenu">&#9776;</button>
       <a href="../profile.html" id="logo">
@@ -39,8 +39,8 @@
         <h1>Parabéns</h1>
         <p>Olá <span id="var_nome"></span>,</p>
         <p>
-          Parábens sua nota foi acima de
-          <strong>70% de aproveitamento</strong>, atingindo o necessário para a sua aprovação. 
+          Parábens sua nota foi de
+          <strong><span id="nota"></span>%</strong>, atingindo o necessário para a sua aprovação. 
           Agora você pode obter o certificado.
         </p>
         <p>

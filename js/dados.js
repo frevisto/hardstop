@@ -30,3 +30,10 @@ function chamarData(){
 
     document.getElementById("data").innerHTML = diad;
 }
+
+function chamarNota(){
+    let dados = localStorage.getItem("dados");
+    let data =  JSON.parse(dados);
+    let cal = data.questionario.nota;
+    document.getElementById("nota").innerHTML = cal;
+}
