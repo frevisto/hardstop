@@ -13,3 +13,7 @@
 |      🟢 outras    |   GitHub: Burndown |  💚 Concluido |  3️⃣|
 |      🟢 outras     | Trello: cronograma de tarefas com link para o GitHub |    💚 Concluido  | 3️⃣ |
 |      🟢 outras  | GitHub: pull requests das tarefas |  💚 Concluido  |  3️⃣|
+
+<div>
+  <img src=https://github.com/frevisto/hardstop/blob/main/miscelaneo/brundown.jpeg>
+</div>
