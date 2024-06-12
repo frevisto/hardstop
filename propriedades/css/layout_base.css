@@ -8,7 +8,6 @@
 body {
   display: flex;
   flex-wrap: wrap;
-  margin: 3px;
   width: 100vw;
   height: 100vh;
   flex: 1 1 100vw;
@@ -198,6 +197,16 @@ perfil
   border: none;
   background-color: rgb(190, 182, 182);
 }
+.alinhamento{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagens{
+  height: 50%;
+  width: 50%;
+}
 /* ASIDE CONFIG*/
 aside {
   flex: 1 1 100vw;
@@ -369,13 +378,16 @@ ul#pril li:hover {
   color: dimgray;
 }
 td,th{
-  border: 1px solid black;
+  border: 1px solid rgb(67, 114, 146);
   text-align: left;
   padding: 8px;
+  background-color: bisque;
 }
 table{
   width: 80%;
-  padding: 10 10 10 200;
+  height: 80%;
+  margin: auto;
+  
 }
 #btsmv {
   /* width: 130px;
@@ -424,6 +436,10 @@ table{
 
 }
 @media only screen and (max-width: 717px) {
+  .imagens{
+    height: 100%;
+    width: 100%;
+  }
   a#logo {
     width: fit-content;
   }
@@ -560,14 +576,4 @@ div.cadin > input {
 #feedback {
   font-weight: bold;
   text-align: center;
-}
-.alinhamento{
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.imagens{
-  height: 50%;
-  width: 50%;
 }

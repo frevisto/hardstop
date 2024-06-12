@@ -26,7 +26,7 @@ function listarQuestao() {
       })
       .then((data) => {
         let questoes = "";
-        for (i = 0; i < 20; i++) {
+        for (i = 0; i < data.length; i++) {
           //armazena os id gerados...
           globalid[i] = JSON.parse(data[i].idperguntas);
           questoes += `<div class='questao'>
