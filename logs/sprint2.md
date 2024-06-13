@@ -19,7 +19,7 @@
 
 
 
-![](sprint1_burndown.jpeg)
+![](sprint2_burndown.jpeg)
 
 
 Sprint Review:
