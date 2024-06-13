@@ -64,7 +64,7 @@
 </div>
 <br>
 <div align="middle">
-  <img src=https://github.com/frevisto/hardstop/blob/main/miscelaneo/burndown%202.png>
+  <img src=https://github.com/frevisto/hardstop/blob/main/logs%2Fsprint2_burndown.jpeg>
 </div>
 <div>
   <img src=https://github.com/frevisto/hardstop/blob/main/miscelaneo/brundown.jpeg>
