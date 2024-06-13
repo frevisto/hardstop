@@ -60,7 +60,7 @@
 # 🐦‍🔥 BURNDOWN
 
 <div align="middle">
-  <img src=https://github.com/frevisto/hardstop/blob/main/miscelaneo/burndown%201.png>
+  <img src=https://github.com/frevisto/hardstop/blob/main/logs/sprint1_burndown.jpeg>
 </div>
 <br>
 <div align="middle">
